@@ -19,7 +19,7 @@ It's also worth noting that:
 * Avoid inline JavaScript
 * De-duplicate dojo and jquery scripts (these are loaded multiple times)
 
-**Google Tag Manager**
+### Google Tag Manager
 
 Current implementation uses inline JavaScript click events for dataLayer.push across the entire site
 
