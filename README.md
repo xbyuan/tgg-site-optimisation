@@ -21,7 +21,7 @@ It's also worth noting that:
 
 ### Google Tag Manager
 
-Current implementation uses inline JavaScript click events for dataLayer.push across the entire site
+Current implementation uses inline JavaScript click events for dataLayer.push across the entire site. This is not only very inefficient but also adds a significant amount of extra JavaScript code to all our pages.
 
 * The homepage has 417 inline JavaScript onClick events for dataLayer.push
 * Each product tile has 4 individual onClick events containing both dataLayer.push, additional GTM scripts and inline vanilla JS
