@@ -30,3 +30,7 @@ Current implementation uses inline JavaScript click events for dataLayer.push ac
 * Each product tile has 4 individual onClick events containing both dataLayer.push, additional GTM scripts and inline vanilla JS
 * Additionally each product tile loads an inline script tag that is triggered on page load (this is used for tracking page views per product tile)
 
+**GTM should be rewritten to use a generic script to handle all click events.**
+
+* Click events can be assigned to elements using a class or data attributes. 
+* Data can be passed to the function utilising data-attributes on the elements 
