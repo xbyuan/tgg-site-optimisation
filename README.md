@@ -18,6 +18,9 @@ It's also worth noting that:
 * Idenity and separate scripts that are required on all pages from scripts that are only used on certain pages
 * Avoid inline JavaScript
 * De-duplicate dojo and jquery scripts (these are loaded multiple times)
+* Move embedded JS into separate file
+* Migrate as much JS as possible to footer
+
 
 ### Google Tag Manager
 
@@ -26,3 +29,4 @@ Current implementation uses inline JavaScript click events for dataLayer.push ac
 * The homepage has 417 inline JavaScript onClick events for dataLayer.push
 * Each product tile has 4 individual onClick events containing both dataLayer.push, additional GTM scripts and inline vanilla JS
 * Additionally each product tile loads an inline script tag that is triggered on page load (this is used for tracking page views per product tile)
+
