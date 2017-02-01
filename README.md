@@ -36,3 +36,7 @@ Current implementation uses inline JavaScript click events for dataLayer.push ac
 * Click events can be assigned to elements using a class or data attributes. 
 * Data can be passed to the function utilising data-attributes on the elements 
 
+## CSS Performance and Refactoring
+
+* The site contains roughly 40,000 lines of CSS
+* A huge amount of this is duplicate, out of date or completely unused CSS
