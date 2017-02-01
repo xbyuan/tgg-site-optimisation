@@ -15,7 +15,7 @@ It's also worth noting that:
   
 ## JavaScript Performance Issues and recommendations  
 
-* Idenity and separate scripts that are required on all pages from scripts that are only used on certain pages
+* Identify and separate scripts that are required on all pages from scripts that are only used on certain pages
 * Avoid inline JavaScript
 * De-duplicate dojo and jquery scripts (these are loaded multiple times)
 * Move embedded JS into separate file
