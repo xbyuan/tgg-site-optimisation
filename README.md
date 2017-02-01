@@ -13,14 +13,14 @@ It's also worth noting that:
   * Base64 encoding makes file sizes roughly 33% larger than their original binary representations
   * Base64 encoded data may possibly take longer to process than binary data
   
-## JavaScript Performance Issues  
+## JavaScript Performance Issues and recommendations  
 
 * Idenity and separate scripts that are required on all pages from scripts that are only used on certain pages
 * Avoid inline JavaScript
 * De-duplicate dojo and jquery scripts (these are loaded multiple times)
 * Move embedded JS into separate file
 * Migrate as much JS as possible to footer
-
+* Start using `require` and `dojo.require` to load required scripts on all pages (set these up to be configured for individual page types)
 
 ### Google Tag Manager
 
