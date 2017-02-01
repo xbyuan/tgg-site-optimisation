@@ -46,3 +46,5 @@ Current implementation uses inline JavaScript click events for dataLayer.push ac
 ### CSS Refactoring
  
 Because of the size of the legacy CSS it will very likely be faster and more efficient to scrap the old CSS completely and rebuild page by page using a combination of the GDDS CSS and new custom CSS for each page type. 
+
+This can be done page by page by individually disabling common and legacy CSS for a specific page type e.g. product page. We can then re-create the page with new CSS combining the design system with a custom CSS file targeted at just that page. 
