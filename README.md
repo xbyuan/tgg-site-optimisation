@@ -42,3 +42,7 @@ Current implementation uses inline JavaScript click events for dataLayer.push ac
 * The majority of this is duplicate, out of date or completely unused CSS
 * CSS is spread across multiple CSS files generating separate http requests
 * Some CSS files use @import to load even more CSS files (general speaking using @import is not recommended in a production environment as this performs worse than link)
+
+### CSS Refactoring
+ 
+Because of the size of the legacy CSS it will very likely be faster and more efficient to scrap the old CSS completely and rebuild page by page using a combination of the GDDS CSS and new custom CSS for each page type. 
