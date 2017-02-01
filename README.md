@@ -39,4 +39,6 @@ Current implementation uses inline JavaScript click events for dataLayer.push ac
 ## CSS Performance and Refactoring
 
 * The site contains roughly 40,000 lines of CSS
-* A huge amount of this is duplicate, out of date or completely unused CSS
+* The majority of this is duplicate, out of date or completely unused CSS
+* CSS is spread across multiple CSS files generating separate http requests
+
