@@ -21,6 +21,7 @@ It's also worth noting that:
 * Move embedded JS into separate file
 * Migrate as much JS as possible to footer
 * Start using `require` and `dojo.require` to load required scripts on all pages (set these up to be configured for individual page types)
+* Embedded scripts are loaded whether they are required or not. Embedded scripts also use global scope 
 
 ### Google Tag Manager
 
@@ -34,3 +35,4 @@ Current implementation uses inline JavaScript click events for dataLayer.push ac
 
 * Click events can be assigned to elements using a class or data attributes. 
 * Data can be passed to the function utilising data-attributes on the elements 
+
