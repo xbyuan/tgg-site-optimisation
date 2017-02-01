@@ -41,4 +41,4 @@ Current implementation uses inline JavaScript click events for dataLayer.push ac
 * The site contains roughly 40,000 lines of CSS
 * The majority of this is duplicate, out of date or completely unused CSS
 * CSS is spread across multiple CSS files generating separate http requests
-
+* Some CSS files use @import to load even more CSS files (general speaking using @import is not recommended in a production environment as this performs worse than link)
