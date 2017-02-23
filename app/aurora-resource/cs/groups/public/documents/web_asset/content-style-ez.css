@@ -1,0 +1,49 @@
+        .tggcontent .pad-left-30 {
+            padding-left: 30px;
+        }
+        .tggcontent .navbar-nav .brand-logo {
+            padding: 20px;
+        }
+        .tggcontent .navbar-nav #megamenu-gift {
+            left: -491px !important;
+        }
+/* Form styling fixes */
+.tggcontent .controls {width: 100%;}
+.tggcontent .checkbox {width: auto; line-height: normal;}
+
+/* OVERRIDE IT WIDTH on BRAND PAGE LOGO */
+h1.main_heading .titleItems4 .brand-logo {width: auto;}
+
+/* Brand page brandcrumb is height 100% which makes it very large in mobile */
+
+
+@media (max-width: 600px) and (min-width: 300px) {
+div#widget_breadcrumb.Leftwidget_breadcrumb {
+	height: auto;
+}
+}
+
+.tggcontent .brand-articles .feedwrapper .headline {
+}
+.tggcontent .brand-articles .feedwrapper .headline {margin-left: 0px;
+width: 100%;
+float: left;
+min-height:37px;}
+.contentRecommendationWidget .tggcontent .brand-articles .feedwrapper img {
+margin-top: 10px;
+width: 100%;
+margin-bottom: 10px;
+margin-right: 0px !important;
+height: auto;
+}
+
+@media (max-width: 600px) and (min-width: 300px) {
+
+.contentRecommendationWidget .tggcontent .brand-articles .feedwrapper img { margin-top: 0px;
+}
+}
+
+.tggcontent .brand-articles .feedwrapper .goodblogfeed, .tggcontent .brand-articles .feedwrapper .buyinguidefeed {}
+
+.tggcontent .brand-articles .feedwrapper img {width: auto;}
+.tggcontent .halfendspacing {margin-bottom: 30px;}
