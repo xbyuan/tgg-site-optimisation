@@ -28,8 +28,8 @@
 @import url("base.css");
 
 /** New Dojo responsive header **/
-@import url("bootstrap.min.css");
-@import url("header.css");
+/*@import url("bootstrap.min.css");*/ /*Removed by James Sun on 27.02.17 */
+/*@import url("header.css");*/ /*Removed by James Sun on 27.02.17 */
 
 /* CSS Document */
 /*Madisons 2011 store CSS definitions, used for all languages (except the locales that define their own css files) and all browsers (Excluding IE6). */
@@ -1867,7 +1867,7 @@ div.widget_quick_info_popup > .middle > .content_left_border > .content_right_bo
 		margin-bottom: 15px;
 		float: left;
 	}
-	
+
 	div.widget_quick_info_popup > .middle > .content_left_border > .content_right_border > .content > .left_column > .image_container {
 		border-bottom: 1px dotted #777777;
 		width: 95%;
@@ -1885,7 +1885,7 @@ div.widget_quick_info_popup > .middle > .content_left_border > .content_right_bo
 		z-index: 10;
 		height: 100%;
 	}
-	
+
 	div.widget_quick_info_popup > .middle > .content_left_border > .content_right_border > .content > .left_column > .other_views ul{
 		display: table;
 		padding-left: 0px;
@@ -6581,7 +6581,7 @@ div#widget_coordinate {
 	.product_listing_container .list_mode .product > .product_info > .attr {
 		font-size: 14px;
 	}
-	
+
 	.product_listing_container .list_mode .product > .product_info > .def_attr {
 		display: block;
 	}
@@ -7719,7 +7719,7 @@ div.widget_search_tab_wrapper .tab_header .tab_container {
 		float: left;
 		width: 50%;
 	}
-	
+
 	@media (max-width: 920px) {
 		.static_page > .style_guide > .left_image{
 			width: 100%;
@@ -7728,7 +7728,7 @@ div.widget_search_tab_wrapper .tab_header .tab_container {
 			width: 100%;
 		}
 	}
-	
+
 	.static_page > .style_guide > .right_content > ul {
 		padding: 0;
 	}
@@ -7969,7 +7969,7 @@ div .error_icon {
 
 
 #wrapper > .registerationmob
-{ 
+{
     overflow: hidden;
     position: relative;
 }
@@ -7998,7 +7998,7 @@ div .error_icon {
 	color: #000000;
     display: block;
 	width:100%;
-	float:none; 
+	float:none;
     font-family: "futura-pt-condensed",sans-serif;
     font-size: 18px;
     font-weight: normal;
@@ -8021,9 +8021,9 @@ div .error_icon {
 	border-left-color:#999;
 	border-left-width:1px;
 	border-left-style:solid;
-	padding:3px; 
+	padding:3px;
 }
- p.regtext 
+ p.regtext
 {
 	color: #7f7f7f;
     font-size: 16px;
@@ -8032,7 +8032,7 @@ div .error_icon {
 	display: block;
     margin-left:29px;
 	margin-bottom:5px;
-	margin-top:5px; width:90%; 
+	margin-top:5px; width:90%;
    }
 
  .registerationmob > .item_wrapper2 .inputfield.input_width_standard {
@@ -8047,8 +8047,8 @@ div .error_icon {
 }
  .registerationmob > .item_wrapper2 .inputfield.input_width_standard:focus {
     outline: 0;
-  	border-color: #4697e4; 
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #DBC59E; 	 
+  	border-color: #4697e4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #DBC59E;
 	color: #a49ea1;
     font-size: 15px;
     margin-left:7px;
@@ -8082,10 +8082,10 @@ div .error_icon {
 
 .registerationmob > .item_wrapper2 .small_text
 {
- 	font-size: 14px;	
+ 	font-size: 14px;
 }
 
-.registerationmob #back_link .left > .arrow_icon { 
+.registerationmob #back_link .left > .arrow_icon {
   	background: url("../images/back_arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     float: left;
     height: 14px;
@@ -8093,26 +8093,26 @@ div .error_icon {
     margin-top: 17px;
     position: absolute;
     width: 10px;
-} 
- 
- 
- 
-.registerationmob > .item_wrapper p.regtext .required 
+}
+
+
+
+.registerationmob > .item_wrapper p.regtext .required
 {
  	color: #d90101;
     display: inline;
     padding-top: 2px;
     width: 20%;
 }
- 
- 
- 
+
+
+
  /*--------------------------------TGG Registration Mobile  Page CSS End--------------------------------------*/
- 
+
   /*--------------------------------TGG My Account Landing Page  Mobile CSS Start--------------------------------------*/
- 
+
  #wrapper > .accountlanding
-{ 
+{
     overflow: hidden;
     position: relative;
 	background-color:#069;
@@ -8127,8 +8127,8 @@ div .error_icon {
  {
    	color: #4d4d4d;
     font-family: "futura-pt",sans-serif;
-    font-size: 20px; 
-    font-weight: 500; 
+    font-size: 20px;
+    font-weight: 500;
     margin-bottom: 5px;
     margin-left: 28px;
     margin-top: 5px;
@@ -8142,7 +8142,7 @@ div .error_icon {
 	width:10px;
 	background:url("../images/back_arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	float:left;
-} 
+}
  .accountlanding > .item_wrapper1 h4
  {
 	color: #7f7f7f;
@@ -8154,16 +8154,16 @@ div .error_icon {
     margin-left: 11px;
     margin-top: 5px;
     padding: 0;
- 	
+
 }
 .accountlanding .item_wrapper_gradient div.item_wrapper, div.item_wrapper_button, div.item_wrapper div.sub_wrapper:first-child
  {
    border-top: 1px solid #c6d0dc;
-   border-radius: 5px 5px 0 0;  
+   border-radius: 5px 5px 0 0;
   }
- 
+
  .accountlanding > div#department_categories div.sub_wrapper, div#help_categories div.sub_wrapper{
-  border-bottom: 1px solid #c6d0dc; border-left:1px solid #c6d0dc;    border-right:1px solid #c6d0dc;  
+  border-bottom: 1px solid #c6d0dc; border-left:1px solid #c6d0dc;    border-right:1px solid #c6d0dc;
 }
    .accountlanding >  div#department_categories div.sub_wrapper, div#help_categories div.sub_wrapper {
     cursor: pointer;
@@ -8172,12 +8172,12 @@ div .error_icon {
     padding-top: 5px;
     position: relative;
 }
- 
+
  .accountlanding .item_wrapper_gradient div.item_wrapper, div.item_wrapper_button, div.item_wrapper div.sub_wrapper:last-child
  {
-   border-bottom: 1px solid #c6d0dc;  border-radius:0px 0px 5px 5px;  
+   border-bottom: 1px solid #c6d0dc;  border-radius:0px 0px 5px 5px;
   }
-  
+
  .accountlanding .item_wrapper_gradient div.item_wrapper, div.item_wrapper_button, div.item_wrapper div.sub_wrapper:hover
 {
  background: linear-gradient(#ebedec 19%, #f7f7f7 58%) repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -8185,7 +8185,7 @@ div .error_icon {
 .accountlanding .item_wrapper_gradient div.item_wrapper, div.item_wrapper_button, div.item_wrapper div.sub_wrapper:active
 {
  background: linear-gradient(#ebedec 19%, #f7f7f7 58%) repeat scroll 0 0 rgba(0, 0, 0, 0);
- 
+
 }
 .accountlanding .back_arrow left
 {
@@ -8197,26 +8197,26 @@ div .error_icon {
 }
 .accountlanding .back_arrow left:hover
 {
- background: linear-gradient(#ebedec 19%, #f7f7f7 58%) repeat scroll 0 0 rgba(0, 0, 0, 0); 
+ background: linear-gradient(#ebedec 19%, #f7f7f7 58%) repeat scroll 0 0 rgba(0, 0, 0, 0);
  }
- 
+
  .accountlanding div#breadcrumb .back_arrow:active
- { 
+ {
   background: linear-gradient(#ebedec 19%, #f7f7f7 58%) repeat scroll 0 0 rgba(0, 0, 0, 0);
  }
 
-.accountlanding > #department_categories .forward_arrow_icon 
-  {height:14px;left:95%; margin-top:0px;position: absolute;width:10px; background: url("../images/forward_arrow.gif");	float:right; 
+.accountlanding > #department_categories .forward_arrow_icon
+  {height:14px;left:95%; margin-top:0px;position: absolute;width:10px; background: url("../images/forward_arrow.gif");	float:right;
   }
 
- .accountlanding div#breadcrumb .page_title 
-   
+ .accountlanding div#breadcrumb .page_title
+
    {
 	border-left: 1px solid #d5d5d5;
     padding: 6px 5px 5px 10px;
-	   
+
    }
- 
+
 /*--------------------------------TGG My Account Landing Page  Mobile CSS End--------------------------------------*/
 
 /*--------------------------------TGG Product Compare CSS Start Here--------------------------------------*/
@@ -8392,7 +8392,7 @@ margin-right: .4em;
   text-transform: uppercase;
 }
 
-.shopperActions .dropdown_list_wrapper .wish_order_list{ border-top:0px; border-bottom: 1px  solid #eeeeee; border-left:1px  solid #eeeeee; border-right:1px  solid #eeeeee; width:74%; 
+.shopperActions .dropdown_list_wrapper .wish_order_list{ border-top:0px; border-bottom: 1px  solid #eeeeee; border-left:1px  solid #eeeeee; border-right:1px  solid #eeeeee; width:74%;
 border-bottom-left-radius:5px;  border-bottom-right-radius:5px; border-top-left-radius:0px; border-top-right-radius:0px; }
 
 .shopperActions .dropdown_primary .shoppping_list_content {
@@ -8410,7 +8410,7 @@ border-bottom-left-radius:5px;  border-bottom-right-radius:5px; border-top-left-
     color: rgb(255, 255, 255) !important;
     font-size: 20px !important;
     text-align:left !important;
-	
+
 }
 .shopperActions .dropdown_primary_menu > .drop {
     border-left: 1px solid rgb(255, 255, 255) !important;
@@ -8447,7 +8447,7 @@ border-bottom-left-radius:5px;  border-bottom-right-radius:5px; border-top-left-
 .shopperActions .dropdown_list_wrapper .message_blue {
     font-style:normal;
     line-height: 14px;
-    font-size:.90em; color:#45b5d9; 
+    font-size:.90em; color:#45b5d9;
 }
 .shopperActions .dropdown_list_wrapper .message_blue a {
     font-style:normal;
@@ -8529,7 +8529,7 @@ font-family:"futura-pt",sans-serif; font-size:.90em; text-decoration:none; color
 .price_section span.pr_price{font-size:2.8em;}
 .price_section .was_price_sm{font-size:22px;}
 .bonus_offer_text{font-size:.8em;}
-.tech_spec h2{color: #000; font-size: 18px; margin-bottom: 20px; font-family:"futura-pt",sans-serif; 
+.tech_spec h2{color: #000; font-size: 18px; margin-bottom: 20px; font-family:"futura-pt",sans-serif;
 font-weight:400; font-style:normal; padding:.1em 0em .5em .5em; margin-bottom:0px;}
 .bonus_offer{width:auto;}
 .speci_area .row .col-sm5{padding:17px 20px;}

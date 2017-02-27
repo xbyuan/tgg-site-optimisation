@@ -1,0 +1,15 @@
+/*-------------------------------------------------------------*/
+/* style.css */
+/*-------------------------------------------------------------*/
+/* line:50 -- "a:hover" */
+#masthead .menu-main-l1 a:hover, #masthead .menu-main-l2 a:hover {color: #fff!important}
+#masthead .menu-main-l3 a:hover {color: #ee4532!important}
+/*-------------------------------------------------------------*/
+/* content-style.css */
+/*-------------------------------------------------------------*/
+/* line:89 -- ".tggcontent .catalogue, .tggcontent .deal" */
+@media (min-width: 768px){
+    .tggcontent .catalogue, .tggcontent .deal {
+        padding: 0;
+    }
+}

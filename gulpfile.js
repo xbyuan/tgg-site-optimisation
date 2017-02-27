@@ -1,4 +1,3 @@
-// generated on 2017-02-23 using generator-webapp 2.4.1
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync').create();
@@ -12,8 +11,13 @@ const reload = browserSync.reload;
 var dev = true;
 
 gulp.task('styles', () => {
-  return gulp.src('app/styles/*.css')
-    .pipe($.if(dev, $.sourcemaps.init()))
+  return gulp.src('app/styles/*.scss')
+    .pipe($.sourcemaps.init())
+    .pipe($.sass.sync({
+        outputStyle: 'expanded',
+        precision: 10,
+        includePaths: ['.']
+    }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.if(dev, $.sourcemaps.write()))
     .pipe(gulp.dest('.tmp/styles'))
@@ -22,10 +26,9 @@ gulp.task('styles', () => {
 
 gulp.task('scripts', () => {
   return gulp.src('app/scripts/**/*.js')
-    .pipe($.plumber())
-    .pipe($.if(dev, $.sourcemaps.init()))
+    .pipe($.sourcemaps.init())
     .pipe($.babel())
-    .pipe($.if(dev, $.sourcemaps.write('.')))
+    .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/scripts'))
     .pipe(reload({stream: true}));
 });
@@ -51,7 +54,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
-    .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
+    .pipe($.if(/\.scss$/, $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if(/\.html$/, $.htmlmin({
       collapseWhitespace: true,
       minifyCSS: true,
@@ -107,7 +110,7 @@ gulp.task('serve', () => {
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 
-    gulp.watch('app/styles/**/*.css', ['styles']);
+    gulp.watch('app/styles/**/*.scss', ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
     gulp.watch('bower.json', ['wiredep', 'fonts']);
