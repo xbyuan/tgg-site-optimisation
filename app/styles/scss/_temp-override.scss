@@ -3,7 +3,7 @@
 /*-------------------------------------------------------------*/
 /* line:50 -- "a:hover" */
 #masthead .menu-main-l1 a:hover, #masthead .menu-main-l2 a:hover {color: #fff!important}
-#masthead .menu-main-l3 a:hover {color: #ee4532!important}
+#masthead .menu-main-l3 a:hover {color: $brand-secondary!important}
 /*-------------------------------------------------------------*/
 /* content-style.css */
 /*-------------------------------------------------------------*/
@@ -13,3 +13,7 @@
         padding: 0;
     }
 }
+/*-------------------------------------------------------------*/
+/* bass.css */
+/*-------------------------------------------------------------*/
+/* Changes refer to bass.css*/

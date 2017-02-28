@@ -1,0 +1,161 @@
+.ggds {
+.minicart-icon-mobile a {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+}
+
+    .minicart-icon-mobile .items {
+        background: $brand-secondary;
+        color: #fff;
+        border-radius: 99px;
+        font-size: 10px;
+        font-family: $font-family-base;
+        padding: 3px 5px;
+        line-height: 1;
+        font-style: normal;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .minicart-icon-mobile a:hover,
+    .minicart-icon-mobile .items:hover {
+        text-decoration: none;
+    }
+/* Minicart ----------------------------------------------------- */
+
+    #miniShopCartSection {
+        position: relative;
+        overflow: visible;
+        border: none;
+        text-transform: uppercase;
+        min-height: 50px;
+        color: $gray-darker;
+    }
+
+        .minicart-icon {
+            padding: 0.6em 0 0 0;
+            margin-left: -10px;
+        }
+            .minicart-icon a {
+                display: inline-block;
+            }
+
+            .minicart-icon .icon {
+                display: inline-block;
+                height: 25px;
+                width: 25px;
+                fill: $brand-primary;
+            }
+
+        #miniShopCartSection .summary {
+           border-left: 1px solid $gray-light;
+           padding-right: 0;
+        }
+        #miniShopCartSection h4 {
+            font-family: $font-family-fancy;
+            line-height: 1;
+            clear: both;
+            padding: 0 10px 0 0;
+            margin: 0;
+            font-size: 1.3em;
+            font-weight: 500;
+            vertical-align: middle;
+            text-align: left;
+        }
+        #minicart-dropdown {
+            text-transform: none;
+            background: $gray-lighter;
+            @include card(1);
+            border-bottom: 8px solid $brand-success;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 250px;
+            max-height: 350px;
+            z-index: 1006;
+            font-size: 0.9em;
+            color: #000;
+            opacity: 1;
+            transition: all ease-in-out 0.3s;
+        }
+            #minicart-dropdown .inner-content {
+                margin: 5px;
+                padding: 5px;
+                background: #fff;
+                max-height: 340px;
+                transition: all ease-in-out 0.3s;
+            }
+
+            #minicart-dropdown.ng-hide {
+                border-bottom-width: 4px;
+                max-height: 0;
+            }
+            #minicart-dropdown.ng-hide .inner-content{
+                max-height: 0;
+                opacity: 0;
+            }
+
+
+            #miniShopCartSection .productwrap {
+                margin: 3px 0;
+                border-bottom: 1px dotted #eee;
+                padding: 3px 0;
+                text-align: left;
+                opacity: 1;
+            }
+
+            #miniShopCartSection .moreproducts { font-weight: 500; }
+            #miniShopCartSection .cartsummary {
+                padding: 5px 0 0 0;
+                text-align: left;
+            }
+                #miniShopCartSection .cart-totalwrap { padding-bottom: 5px; }
+                    #miniShopCartSection .cart-totalwrap .total {
+                        font-weight: 600;
+                        text-align: left;
+                    }
+@media screen and (min-width: $screen-sm) {
+
+.minicart-container { float: right; }
+#miniShopCartSection {
+    background: $gray-lighter;
+    padding: 15px 0 5px 0;
+    border-bottom: 3px solid $brand-success;
+}
+    .minicart-icon { padding: 0 15px; }
+    .minicart-icon a { margin: 5px 10px 0 3px; }
+    .minicart-icon .icon { fill: $brand-success; }
+}
+
+@media screen and (min-width: $screen-md) {
+    .minicart-icon a { margin: 5px 10px 0 7px; }
+}
+.animate-enter,
+.animate-leave {
+    -webkit-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+}
+    .animate-leave.animate-leave-active,
+    .animate-enter {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+
+    .animate-enter.animate-enter-active,
+    .animate-leave {
+        opacity: 1;
+        height: auto;
+        width: auto;
+    }
+}

@@ -379,14 +379,14 @@
                     <!-- Logo/Main branding Appears differently on different devices -->
                     <div class="col-xs-8 branding col-sm-4 col-md-3">
                         <div class="brand">
-                            <a href="https://www.thegoodguys.com.au"><img class="img-responsive good_guy_logo" src="https://www.thegoodguys.com.au/wcsstore/AUOnlineSAS/images/good-guys-logo.svg"></a>
+                            <a href="https://www.thegoodguys.com.au" class="masthead-branding-logo"><img class="img-responsive good_guy_logo" src="https://www.thegoodguys.com.au/wcsstore/AUOnlineSAS/images/good-guys-logo.svg"></a>
                         </div>
                     </div>
                     <!-- Desktop Search -->
                     <section id="search" class="col-sm-3 col-md-3 hidden-xs search_custom">
                         <!-- BEGIN Search.jsp -->
                         <meta name="CommerceSearch" content="storeId_900" />
-                        <script>
+                        <!-- <script>
                         require(["dojo/domReady!"], function() {
                             SearchJS.init();
                             SearchJS.setCachedSuggestionsURL("SearchComponentCachedSuggestionsView?langId=-1&storeId=900&catalogId=30000");
@@ -395,7 +395,7 @@
                         });
                         var staticContent = [];
                         var staticContentHeaders = [];
-                        </script>
+                        </script> -->
                         <div id="searchBar" data-parent="header">
                             <form id="searchBox" role="form" name="CatalogSearchForm" method="get" action="SearchDisplay">
                                 <input id="categoryId" name="categoryId" type="hidden" />
@@ -413,7 +413,9 @@
                                 <div id="searchTermWrapper">
                                     <label id="searchFormLabel" for="SimpleSearchForm_SearchTerm">Search</label>
                                     <input id="SimpleSearchForm_SearchTerm" class="searchbox" type="text" name="searchTerm" placeholder="Search" autocomplete="off">
-                                    <button class="btn" role="button" value="Search" id="desktop-searchsubmit" type="submit" aria-label="Search" title="Search"><i class="fa fa-search"></i></button>
+                                    <!-- Start Refactor Change Point-->
+                                    <button class="btn btn-link" role="button" value="Search" id="desktop-searchsubmit" type="submit" aria-label="Search" title="Search"><i class="fa fa-search"></i></button>
+                                    <!-- End Refactor Change Point-->
                                 </div>
                                 <!-- Start SearchDropdownWidget -->
                                 <div id="searchDropdown">
@@ -503,7 +505,9 @@
                             <a class="mobile_cart" href="https://www.thegoodguys.com.au/OrderCalculate?updatePrices=1&amp;calculationUsageId=-1&amp;errorViewName=AjaxOrderItemDisplayView&amp;catalogId=30000&amp;langId=-1&amp;URL=https%3A%2F%2Fwww.thegoodguys.com.au%2FAjaxOrderItemDisplayView&amp;storeId=900&amp;orderId=.">
                                 <div id="mobile_minishopcart_total"></div>
                             </a>
-                            <div id="MiniShoppingCart" dojoType="wc.widget.RefreshArea" widgetId="MiniShopCartContents" controllerId="MiniShopCartContentsController" aria-labelledby="MiniShoppingCart_Label">
+                            <!-- Start Refactor change point -->
+                            <div class="clearfix" id="MiniShoppingCart" dojoType="wc.widget.RefreshArea" widgetId="MiniShopCartContents" controllerId="MiniShopCartContentsController" aria-labelledby="MiniShoppingCart_Label">
+                            <!-- End Refactor change point -->
                                 <!-- GTM tagging code begins -->
                                 <form id="GtmTaggingForm" name="GtmTaggingForm">
                                     <input type="hidden" id="productNumber" var="productNumber" value="" />
@@ -514,12 +518,22 @@
                                     <input type="hidden" id="productCategory" var="productCategory" value="" />
                                 </form>
                                 <!-- GTM tagging code ends -->
-                                <a id="widget_minishopcart" href="javascript:void(0)" role="button" onKeyPress="javascript:toggleMiniShopCartDropDownEvent(event,'widget_minishopcart','quick_cart_container','orderItemsList');" aria-label="Shopping Cart">
-                                </a>
-                                <div id="minishopcart_total">0 Item
+                                <!-- Start Refactor change point -->
+                                <div class="col-sm-4 minicart-icon">
+                                    <a id="widget_minishopcart" href="javascript:void(0)" role="button" onKeyPress="javascript:toggleMiniShopCartDropDownEvent(event,'widget_minishopcart','quick_cart_container','orderItemsList');" aria-label="Shopping Cart">
+                                        <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/sprite-icons.svg#icon-cart"></use></svg>
+                                    </a>
                                 </div>
-                                <div id="minishopcart_total_price">$0.00
+                                <div class="col-sm-8 summary">
+                                    <h4>
+                                        <div id="minishopcart_total">0 Item</div>
+                                    </h4>
+                                    <h4>
+                                        <div id="minishopcart_total_price">$0.00</div>
+                                    </h4>
                                 </div>
+                                <!-- End Refactor change point -->
+
                                 <input type="hidden" id="currentOrderQuantity" value="0" />
                                 <input type="hidden" id="currentOrderAmount" value="0.00" />
                                 <input type="hidden" id="currentOrderCurrency" value="AUD" />
@@ -550,11 +564,13 @@
                 </div>
             </div>
             <section class="navbar-container hidden-xs" id="main_nav_wrap" style="">
-                <!--Start Masthead Refactor -->
+                <!--Start Refactor Change Point -->
                 <nav class="navbar navbar-primary" role="navigation">
-                    <!--End Masthead Refactor -->
+                    <!--End Refactor Change Point -->
                     <div class="container">
-                        <div class="row">
+                        <!--Start Refactor Change Point -->
+                        <div class="">
+                        <!--End Refactor Change Point -->
                             <nav role="navigation" class="menu-main">
                                 <ul class="nav navbar-nav">
                                     <li class="menu-main-item menu-main-dropdown menu-main-products" id="browse-products">
@@ -3033,11 +3049,11 @@
                                                                         <div class="clearfix megamenu">
                                                                             <div class="catalogue">
                                                                                 <ul>
-                                                                                    <!-- Start Masthead refactor -->
+                                                                                    <!-- Start Refactor Change Point -->
                                                                                     <li class="coltitle">
                                                                                         <a href="/catalogues">
                                                                                             Catalogues
-                                                                                            <!-- Start Masthead refactor -->
+                                                                                            <!-- End Refactor Change Point -->
                                                                                         </a>
                                                                                     </li>
                                                                                     <li><a id="topnav-catalogue-introducinglakeland" class="gatopnav" href="/catalogue04">Introducing Lakeland</a></li>
@@ -3078,11 +3094,11 @@
                                                                         <div class="clearfix megamenu">
                                                                             <div class="deal">
                                                                                 <ul>
-                                                                                    <!-- Start Masthead refactor -->
+                                                                                    <!-- Start Refactor Change Point -->
                                                                                     <li class="coltitle">
                                                                                         <a href="/deals">
                                                                                             Deals
-                                                                                        <!-- Start Masthead refactor -->
+                                                                                        <!-- End Refactor Change Point -->
                                                                                         </a>
                                                                                     </li>
                                                                                     <li><a id="topnav-deals-this weeks best deals" class="gatopnav" href="/this-weeks-best-deals">This Week&rsquo;s Best Deals</a></li>
@@ -3265,9 +3281,9 @@
                         </div>
                     </div>
                     <!-- /.container -->
-                <!-- Start Masthead refactor -->
+                <!-- Start Refactor Change Point -->
                 </nav>
-                <!-- End Masthead refactor -->
+                <!-- End Refactor Change Point -->
             </section>
         </header>
         <script>

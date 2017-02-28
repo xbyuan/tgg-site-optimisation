@@ -188,8 +188,8 @@ dl, ol, ul {
 }
 
 /* Arrow decoration */
-
-.departmentButton:after, #quickLinksButton:after, #widget_minishopcart:after, #departmentsButton:after, #searchButton:after, .pageControlButton:after {
+/* Start refactor change point */
+/*.departmentButton:after, #quickLinksButton:after, #widget_minishopcart:after, #departmentsButton:after, #searchButton:after, .pageControlButton:after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -199,7 +199,8 @@ dl, ol, ul {
 	bottom: 3px;
 	background-image: url("../images/responsive/rwdUI.png");
 	background-position: -101px -1px;
-}
+}*/
+/* End refactor change point */
 .departmentButton.selected:after {
 	content: " ";
 	background-position: -21px -21px;
@@ -208,9 +209,11 @@ dl, ol, ul {
 	bottom: 10px;
 	background-position: -121px -1px;
 }
-#widget_minishopcart:after, #departmentsButton:after, #allDepartmentsButton:after, #searchButton:after {
+/* Start Refactor change point */
+/*#widget_minishopcart:after, #departmentsButton:after, #allDepartmentsButton:after, #searchButton:after {
 	background-position: -121px -1px;
-}
+}*/
+/* End Refactor change point */
 #quickLinksButton.selected:after, #widget_minishopcart.selected:after, #departmentsButton.selected:after, #allDepartmentsButton.selected:after, #searchButton.selected:after {
 	content: " ";
 	background-position: -241px -21px;
@@ -458,8 +461,8 @@ dl, ol, ul {
 }
 
 /* Mini cart button */
-
-#widget_minishopcart {
+/* Start Refactor change point */
+/*#widget_minishopcart {
 	display: block;
 	position: relative;
 	width: 58px;
@@ -472,21 +475,22 @@ dl, ol, ul {
 	border: 1px solid #e1e1e1 !important;
 	border-radius: 4px;
 	overflow: hidden;
-}
-#widget_minishopcart:before {
+}*/
+
+/*#widget_minishopcart:before {
 	content: url("../images/responsive/rwdUI.png");
 	position: absolute;
 	left: 7px;
 	top: -27px;
 	clip: rect(41px, 27px, 60px, 1px);
-}
-#widget_minishopcart:hover {
+}*/
+/*#widget_minishopcart:hover {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f9f9), to(#ced2d3));
 	background-image: linear-gradient(#f7f9f9, #ced2d3);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr='#f7f9f9', endColorStr='#ced2d3')";
 	text-decoration: none !important;
-}
-#minishopcart_total {
+}*/
+/*#minishopcart_total {
 	display: block;
 	position: absolute;
 	right: 10px;
@@ -497,8 +501,8 @@ dl, ol, ul {
 	color: #ffffff;
 	font-size: 12px;
 	font-weight: bold;
-}
-
+}*/
+/* End Refactor change point */
 /* Mini cart */
 
 #cartDropdown {
@@ -688,7 +692,8 @@ dl, ol, ul {
 #searchButton {
 	display: none;
 }
-#searchBar {
+/* Start refactor change point */
+/*#searchBar {
 	position: absolute;
 	right: 18px;
 	top: 0;
@@ -706,21 +711,23 @@ dl, ol, ul {
 }
 #searchBox > * {
 	text-align: left;
-}
-#searchTermWrapper {
+}*/
+/*#searchTermWrapper {
 	position: absolute;
 	left: 0;
 	right: 170px;
 	height: 18px;
 	padding: 6px 10px;
 	margin: 4px 0;
-}
+}*/
+/* End refactor change point */
 #searchTermWrapper > .placeholder {
 	position: absolute;
 	color: #bfbfbf;
 	cursor: text;
 }
-#searchTermWrapper > input {
+/* Start refactor change point */
+/*#searchTermWrapper > input {
 	position: relative;
 	width: 100%;
 	height: 18px;
@@ -729,7 +736,8 @@ dl, ol, ul {
 	background-color: transparent;
 	border: 0 none;
 	font-size: inherit;
-}
+}*/
+/* End refactor change point */
 #searchFormLabel {
 	display: none;
 }
