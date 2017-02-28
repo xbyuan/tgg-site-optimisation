@@ -36,7 +36,7 @@ Start your command prompt (either Cmder standard windows cmd.exe).
     * This will start the local web server and view the prototype in your browser. 
     * After a few seconds this should automatically start your browser and open up http://localhost:9000/
 
-## How to use git to contribute or get updates?
+### How to use git to contribute or get updates?
 
 Have a quick read through [The simple guide to GIT](http://rogerdudler.github.io/git-guide/) before proceeding.
 
@@ -66,7 +66,7 @@ Further reading: [Base64 Encoding and Performance](https://csswizardry.com/2017/
 * Start using `require` and `dojo.require` to load required scripts on all pages (set these up to be configured for individual page types)
 * Embedded scripts are loaded whether they are required or not. Embedded scripts also use global scope 
 
-### Google Tag Manager
+## Google Tag Manager
 
 Current implementation uses inline JavaScript click events for dataLayer.push across the entire site. This is not only very inefficient but also adds a significant amount of extra JavaScript code to all our pages.
 
