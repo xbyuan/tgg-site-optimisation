@@ -4564,17 +4564,17 @@ div.widget_search_departments_dropdown > div.bottom > div.right_border{
 /* -----------------------------------------------------------------------------*/
 /* 4.1.4 MiniShoppingCart Widget
 /* -----------------------------------------------------------------------------*/
-
-/* Positioning in the masthead for the minishopcart */
-div.widget_minishopcart_position {
+/*Start refactor change point*/
+/*/* Positioning in the masthead for the minishopcart */
+/*div.widget_minishopcart_position {
 	position: absolute;
 	top: 7px;
 	right: 16px;
 	z-index: 10;
-}
+}*/
 
 /* Minishopcart Style */
-div#widget_minishopcart {
+/*div#widget_minishopcart {
 	cursor:pointer;
 }
 	div#widget_minishopcart > div.content {
@@ -4645,11 +4645,11 @@ div#widget_minishopcart {
 		background: url('../images/colors/color1/widget_minishopcart/minishopcart_right_border.png') no-repeat;
 		float: left;
 	}
-
+*/
 /* -----------------------------------------------------------------------------*/
 /* 4.1.5 MiniShoppingCart Widget Popup
 /* -----------------------------------------------------------------------------*/
-div#widget_minishopcart_popup, div#widget_minishopcart_popup_1 {
+/*div#widget_minishopcart_popup, div#widget_minishopcart_popup_1 {
 	cursor:pointer;
 }
 	div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product {
@@ -4665,21 +4665,20 @@ div#widget_minishopcart_popup, div#widget_minishopcart_popup_1 {
 			top: 0px;
 			left: 0px;
 			padding: 5px 10px 5px 0;
-			overflow: hidden; /*Dev*/
+			overflow: hidden;
 		}
 		div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product > .product_name, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product > .product_name {
 			font-size: 16px;
 			color: #666666;
-		}
+		}*/
 
 		/* DevStart - productname color was displayed as blue in IE7. */
-		div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product > .product_name a, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product > .product_name a {
-		/*	color: #666666;*/
-		}
+		/*div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product > .product_name a, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product > .product_name a {
+		}*/
 		/*DevEnd*/
 
 		/* DevStart: text underline effect on mouse over for product name in minishopcart */
-		div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product  a, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product  a {
+		/*div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product  a, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product  a {
 			text-decoration: none;
 		}
 		div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product  a:hover, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product  a:hover {
@@ -4687,10 +4686,10 @@ div#widget_minishopcart_popup, div#widget_minishopcart_popup_1 {
 		}
 		div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product > .product_image a, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product > .product_image a {
 			display:block;
-		}
+		}*/
 		/* DevEnd */
 
-		div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product > .product_quantity, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product > .product_quantity {
+		/*div#widget_minishopcart_popup > #cartDropdown > .content > .products > .product > .product_quantity, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .products > .product > .product_quantity {
 			font-size: 13px;
 			color: #666666;
 			margin-right: 14px;
@@ -4746,10 +4745,10 @@ div#widget_minishopcart_popup, div#widget_minishopcart_popup_1 {
 		div#widget_minishopcart_popup > #cartDropdown > .content > .go_to_cart > .button_primary, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .go_to_cart > .button_primary {
 			float: right;
 			margin-top: 5px;
-		}
+		}*/
 
 	/* Added Product */
-	div#widget_minishopcart_popup > #cartDropdown > .content > .added > .product, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .added > .product {
+	/*div#widget_minishopcart_popup > #cartDropdown > .content > .added > .product, div#widget_minishopcart_popup_1 > #cartDropdown > .content > .added > .product {
 		min-height: 112px;
 		border-bottom: 1px solid #edeff0;
 		position: relative;
@@ -4788,7 +4787,7 @@ div#widget_minishopcart_popup, div#widget_minishopcart_popup_1 {
 			width: 3px;
 			height: 3px;
 			background-color: #a3a3a3;
-		}
+		}*/
 
 /* -----------------------------------------------------------------------------*/
 /* 4.1.6 Masthead Links Widget

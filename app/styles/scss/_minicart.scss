@@ -23,6 +23,7 @@
     .minicart-icon-mobile .items:hover {
         text-decoration: none;
     }
+
 /* Minicart ----------------------------------------------------- */
 
     #miniShopCartSection {
@@ -49,6 +50,9 @@
                 fill: $brand-primary;
             }
 
+
+
+
         #miniShopCartSection .summary {
            border-left: 1px solid $gray-light;
            padding-right: 0;
@@ -64,7 +68,9 @@
             vertical-align: middle;
             text-align: left;
         }
-        #minicart-dropdown {
+
+
+        #quick_cart {
             text-transform: none;
             background: $gray-lighter;
             @include card(1);
@@ -80,7 +86,8 @@
             opacity: 1;
             transition: all ease-in-out 0.3s;
         }
-            #minicart-dropdown .inner-content {
+
+            #quick_cart .inner-content {
                 margin: 5px;
                 padding: 5px;
                 background: #fff;
@@ -88,17 +95,7 @@
                 transition: all ease-in-out 0.3s;
             }
 
-            #minicart-dropdown.ng-hide {
-                border-bottom-width: 4px;
-                max-height: 0;
-            }
-            #minicart-dropdown.ng-hide .inner-content{
-                max-height: 0;
-                opacity: 0;
-            }
-
-
-            #miniShopCartSection .productwrap {
+            #quick_cart_container .productwrap {
                 margin: 3px 0;
                 border-bottom: 1px dotted #eee;
                 padding: 3px 0;
@@ -106,16 +103,14 @@
                 opacity: 1;
             }
 
-            #miniShopCartSection .moreproducts { font-weight: 500; }
-            #miniShopCartSection .cartsummary {
-                padding: 5px 0 0 0;
-                text-align: left;
-            }
-                #miniShopCartSection .cart-totalwrap { padding-bottom: 5px; }
-                    #miniShopCartSection .cart-totalwrap .total {
+                #quick_cart_container .cart-totalwrap { padding-bottom: 5px; padding-left: 35px}
+                    #quick_cart_container .cart-totalwrap .total {
                         font-weight: 600;
                         text-align: left;
                     }
+
+                    #quick_cart_container .footer {padding-bottom: 10px}
+
 @media screen and (min-width: $screen-sm) {
 
 .minicart-container { float: right; }
@@ -127,11 +122,14 @@
     .minicart-icon { padding: 0 15px; }
     .minicart-icon a { margin: 5px 10px 0 3px; }
     .minicart-icon .icon { fill: $brand-success; }
+
+
 }
 
 @media screen and (min-width: $screen-md) {
     .minicart-icon a { margin: 5px 10px 0 7px; }
 }
+
 .animate-enter,
 .animate-leave {
     -webkit-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
@@ -145,6 +143,7 @@
     text-overflow: clip;
     white-space:nowrap;
 }
+
     .animate-leave.animate-leave-active,
     .animate-enter {
         opacity: 0;

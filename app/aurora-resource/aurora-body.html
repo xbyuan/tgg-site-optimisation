@@ -3895,3 +3895,69 @@
     </div>
 </div>
 <!--<script type="text/JavaScript">cmCreatePageviewTag(document.title,null,null,null);</script>-->
+
+<!-- Start Minicart -->
+<div class="dijitDialog dijitDialogFocused dijitFocused" role="dialog" aria-labelledby="quick_cart_container_title" id="quick_cart_container" widgetid="quick_cart_container" style="position: absolute; opacity: 1; left: 1281.5px; top: 59px; z-index: 1050;">
+    <div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar" title="Shopping Cart Popup">
+        <span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="quick_cart_container_title" role="heading" level="1" style="display: none; visibility: hidden;">Shopping Cart Popup</span>
+        <span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="0" style="display: none; visibility: hidden;">
+            <span data-dojo-attach-point="closeText" class="closeText" title="Cancel" style="display: none; visibility: hidden;">x</span>
+        </span>
+    </div>
+    <div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+    <span class="spanacce" id="quick_cart_container_ACCE_Label">Shopping Cart Popup</span>
+        <div id="quick_cart">
+            <div id="MiniShopCartProductsList" class="custom_Popup">
+                <div id="widget_minishopcart_popup">
+                    <!-- Start Refactor change point -->
+                    <div id="cartDropdown" class="inner-content">
+                        <!-- <h3>Items in your cart:</h3>
+                        <a id="MiniShopCartCloseButton_1" href="javascript:dijit.byId('quick_cart_container').hide();" class="closeButton">Close</a> -->
+                        <!-- End Refactor change point -->
+                        <div class="content padd-left-5 padd-right-5">
+                            <div class="products productwrap clearfix">
+                                <!-- Start Refactor change point -->
+                                <div class="product clearfix">
+                                    <div class="product_quantity col-sm-2 padd-0">1 x</div>
+                                    <div class="product_name col-sm-10 padd-left-0">
+                                        <a id="MiniShopCartProdName_15825395" href="https://www.thegoodguys.com.au/dyson-cinetic-big-ball-multi-floor-barrel-vacuum-214890-01">Dyson&nbsp;Cinetic Big Ball Multi Floor Barrel Vacuum</a>
+                                    </div>
+                                    <!-- <div class="item_spacer_3px"></div> -->
+                                    <div class="product_price col-sm-12 text-right">$576.00</div>
+                                </div>
+
+                                <div class="product clearfix ">
+                                    <div class="product_quantity col-sm-2 padd-0">1 x</div>
+                                    <div class="product_name col-sm-10 padd-left-0">
+                                        <a id="MiniShopCartProdName_15825396" href="https://www.thegoodguys.com.au/dyson-cinetic-big-ball-animal-pro-barrel-vacuum-214893-01">Dyson&nbsp;Cinetic Big Ball Animal Pro Barrel Vacuum</a>
+                                    </div>
+                                    <!-- <div class="item_spacer_3px"></div> -->
+                                    <span class="product_price col-sm-12 text-right">$798.00</span>
+                                </div>
+                                <!-- End Refactor change point -->
+
+                            </div>
+
+                            <div class="subtotal cart-totalwrap clearfix padd-top-15">
+
+                                <div class="col-sm-7 padd-right-0 padd-left-0 ng-binding">Cart total for 3 item</div>
+                                <div class="col-sm-5 text-right padd-left-0">
+                                    <span class="total">$7,536.00</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="footer padd-10 padd-bottom-0">
+                            <a class="clearfix" id="GotoCartButton1" href="https://www.thegoodguys.com.au/OrderCalculate?updatePrices=1&amp;calculationUsageId=-1&amp;errorViewName=AjaxOrderItemDisplayView&amp;catalogId=30000&amp;langId=-1&amp;URL=https%3A%2F%2Fwww.thegoodguys.com.au%2FAjaxOrderItemDisplayView&amp;storeId=900&amp;orderId=.">
+                                <!-- Start refactor change point -->
+                                <button id="btn_GoToCart" type="button" class="btn btn-sm btn-success pull-right">CHECKOUT&nbsp;<i class="fa fa-caret-right"></i></button>
+                                <!-- End refactor change point -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+<!-- End Minicart -->

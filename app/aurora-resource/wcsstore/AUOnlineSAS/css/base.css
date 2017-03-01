@@ -502,10 +502,10 @@ dl, ol, ul {
 	font-size: 12px;
 	font-weight: bold;
 }*/
-/* End Refactor change point */
+
 /* Mini cart */
 
-#cartDropdown {
+/*#cartDropdown {
 	position: relative;
 	width: 360px;
 	background-color: #ffffff;
@@ -513,8 +513,8 @@ dl, ol, ul {
 	border-top: 3px solid #ffa200;
 	border-radius: 0 0 4px 4px;
 	font-size: 12px;
-}
-#cartDropdown > h3 {
+}*/
+/*#cartDropdown > h3 {
 	margin: 0;
 	padding: 15px;
 	background-color: #f5f6f7;
@@ -548,8 +548,8 @@ dl, ol, ul {
 	padding: 10px 15px;
 	border-top: 1px solid #edeff0;
 	text-align: right;
-}
-
+}*/
+/* End Refactor change point */
 /*** Departments bar ***/
 
 #departmentsButton {
