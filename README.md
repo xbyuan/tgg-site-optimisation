@@ -1,6 +1,47 @@
 # Site and Speed Optimisation for thegoodguys.com.au
 CSS and JS optimisation for TGG (Aurora)
 
+## How do I get set up? ##
+
+### Pre-requisites
+
+* [Git client](https://msysgit.github.io/) 
+    * NOTE: It's recommended that you add the Git client to the Windows Path so you can use it directly from regular command line/prompt. This is an option during install with most installers. 
+* [Node.js](https://nodejs.org/download/) Minimum 6.9.x 
+* [Python 2.7.x](https://www.python.org/downloads/)
+* On Windows you'll also need to install [Microsoft Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools)
+* Optional but recommended: [Cmder](http://gooseberrycreative.com/cmder/) *Recommended console emulator replacement for cmd.exe*
+
+### Downloading the repository
+
+Start your command prompt (either Cmder standard windows cmd.exe). 
+
+* Create a new directory where you want to put the files from this repository. 
+* For example if you already have a directory on c: drive called www you'll first want to navigate to that 
+* Do this by tying `cd c:\www` 
+* To create a new directory type `mkdir site-optimisation` (to call it something else just replace site-optimisation with whatever name you want it to be)
+* Make sure to navigate to the new directory by then typing `cd site-optimisation`
+
+### Then type the following commands 
+
+* For HTTPS use: `git clone https://github.com/lifeonlars/tgg-site-optimisation.git .` 
+    * NOTE: The "." at the end specifies the current folder as the checkout folder. 
+    * This should download all the files from the git repository and might take a few minutes.
+    * You may be prompted for your github username and password unless you are already authenticated
+* When the download is complete type `npm install` 
+    * This will download all the node dependencies used for the project. 
+* When npm install in complete type `bower install` 
+    * This will download all the plugins and vendor scripts used in the project e.g. angular, bootstrap etc.
+* When bower install is complete you can now try typing `gulp serve` 
+    * This will start the local web server and view the prototype in your browser. 
+    * After a few seconds this should automatically start your browser and open up http://localhost:9000/
+
+### How to use git to contribute or get updates?
+
+Have a quick read through [The simple guide to GIT](http://rogerdudler.github.io/git-guide/) before proceeding.
+
+*NOTE: Ensure that you are aware if any branches in use, always make sure you are working in the correct branch. If you're using Cmder it will tell you what branch you're in in brackets at the end of your path e.g. `c:\www\site-optimisation (master)`*
+
 
 ## General Performance Issues
 
@@ -12,7 +53,9 @@ It's also worth noting that:
 
   * Base64 encoding makes file sizes roughly 33% larger than their original binary representations
   * Base64 encoded data may possibly take longer to process than binary data
-  
+
+Further reading: [Base64 Encoding and Performance](https://csswizardry.com/2017/02/base64-encoding-and-performance/)
+
 ## JavaScript Performance Issues and recommendations  
 
 * Identify and separate scripts that are required on all pages from scripts that are only used on certain pages
@@ -23,7 +66,7 @@ It's also worth noting that:
 * Start using `require` and `dojo.require` to load required scripts on all pages (set these up to be configured for individual page types)
 * Embedded scripts are loaded whether they are required or not. Embedded scripts also use global scope 
 
-### Google Tag Manager
+## Google Tag Manager
 
 Current implementation uses inline JavaScript click events for dataLayer.push across the entire site. This is not only very inefficient but also adds a significant amount of extra JavaScript code to all our pages.
 
