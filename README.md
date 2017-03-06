@@ -96,3 +96,26 @@ To achieve this we would need to
 
 1. Create a new dedicated dev environment to edit and test the new changes
 2. Move all CSS into a page type specific espot to allow us to not load a large part of the CSS for different page types
+
+## Milestones
+
+### 1. Refactor masthead, menus and footer
+
+Status: *In-Progress* (James)
+
+### 2. Home page
+
+Status: *Not Started*
+
+### 3. Refactor Product Page
+
+Status: *Not Started*
+
+### 4. Refactor Product Listing Pages (L2, L3)
+
+Status: *Not Started*
+
+### 5. Refactor Product Listing Page (L1)
+
+Status: *Not Started*
+
