@@ -1,5 +1,6 @@
 # Site and Speed Optimisation for thegoodguys.com.au
-CSS and JS optimisation for TGG (Aurora)
+
+Optimisation and refactoring of CSS and HTML of existing pages in Aurora.  Additionally some JavaScript optimisation where possible to limit render blocking scripts and reducing inline JavaScript.
 
 ## How do I get set up? ##
 
