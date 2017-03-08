@@ -770,9 +770,11 @@ dl, ol, ul {
 	width: 170px;
 }
 @media (min-width: 601px) and (max-width: 900px) {
-	#searchTermWrapper {
+	/* Start refactor change point */
+	/*#searchTermWrapper {
 		right: 35px;
-	}
+	}*/
+	/* End refactor change point */
 	#searchFilterButton {
 		display: none;
 	}
@@ -1698,13 +1700,15 @@ dl, ol, ul {
 /*** High-resolution displays ***/
 
 @media (-webkit-device-pixel-ratio: 2) {
-	.departmentButton:after, #quickLinksButton:after, #widget_minishopcart:after, #departmentsButton:after, #searchButton:after, .pageControlButton:after,
+	/* Start Refactor Change Point */
+	/*.departmentButton:after, #quickLinksButton:after, #widget_minishopcart:after, #departmentsButton:after, #searchButton:after, .pageControlButton:after,
 	#cartDropdown > .closeButton:after,
 	#searchFilterButton:after {
 		background-image: url("../images/responsive/rwdUI@2x.png");
 		background-size: 300px 400px;
 	}
-	#widget_minishopcart:before,
+	#widget_minishopcart:before,*/
+	/* End Refactor Change Point */
 	#searchBox > .submitButton:before,
 	.carousel > .prevPageButton:before,
 	.carousel > .nextPageButton:before,

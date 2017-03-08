@@ -377,13 +377,32 @@
                     <!-- Show only on mobile -->
                     <div class="col-xs-2 visible-xs nav-toggle"><span type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body"><i class="fa fa-bars"></i></span></div>
                     <!-- Logo/Main branding Appears differently on different devices -->
-                    <div class="col-xs-8 branding col-sm-4 col-md-3">
-                        <div class="brand">
-                            <a href="https://www.thegoodguys.com.au" class="masthead-branding-logo"><img class="img-responsive good_guy_logo" src="https://www.thegoodguys.com.au/wcsstore/AUOnlineSAS/images/good-guys-logo.svg"></a>
+                    <div class="col-xs-8 branding col-sm-5 col-md-4 padd-0">
+                        <div class="brand padd-top-10">
+                            <div id="contentRecommendationWidget_logo-masthead-eSpot" class="contentRecommendationWidget">
+                                <!-- BEGIN Content_UI.jspf -->
+                                <div class="left_espot">
+                                    <div class="ggds">
+                                        <div class="col-xs-12 logo-mast nopadding">
+                                            <div class="col-xs-8 tgg-logo padd-left-0 padd-right-0 text-left">
+                                                <a href="/"><img class="img-responsive good_guy_logo" src="/aurora-resource/cs/groups/public/documents/web_asset/good-guys-logo-main.svg"></a>
+                                            </div>
+                                            <div class="col-xs-4 mkr-logo padd-left-10 padd-right-0 text-right">
+                                                <a href="/mkr"><img class="img-responsive good_guy_logo" src="/aurora-resource/cs/groups/public/documents/web_asset/mkr-logo.svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Start Refactor Change Point -->
+                                    <!--<style type="text/css">@media screen and (min-width:768px){.masthead-header .brand{padding:10px 0;margin-bottom:10px}.logo-mast{margin-bottom:10px}}@media screen and (max-width:767px){.logo-mast{margin-bottom:0px}#masthead .col-xs-8{width:62%}#masthead .col-xs-4.mkr-logo{width:37.99%}}
+                                    </style>-->
+                                    <!-- End Refactor Change Point -->
+                                </div>
+                                <!-- END Content_UI.jspf -->
+                            </div>
                         </div>
                     </div>
                     <!-- Desktop Search -->
-                    <section id="search" class="col-sm-3 col-md-3 hidden-xs search_custom">
+                    <section id="search" class="col-sm-3 col-md-2 hidden-xs search_custom">
                         <!-- BEGIN Search.jsp -->
                         <meta name="CommerceSearch" content="storeId_900" />
                         <!-- <script>
@@ -485,21 +504,21 @@
                         <!-- End Search Widget -->
                         <!-- END Search.jsp -->
                     </section>
-                    <nav class="col-sm-2 col-md-4 hidden-xs supplementary">
+                    <nav class="col-sm-2 col-md-4 hidden-xs supplementary padd-sm-left-0">
                         <ul class="small-nav">
                             <li>
-                                <a title="About Us" href="/about-us"><span class="hidden-sm">About Us</span> <i class="fa fa-info-circle visible-sm"></i></a>
+                                <a title="About Us" href="/about-us"><span class="hidden-sm hidden-md">About Us</span> <i class="fa fa-info-circle visible-sm visible-md"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.thegoodguys.com.au/store-locator" title="Store Locator &amp; Trading Hours" onclick="dataLayer.push({'event':'TGGMNav1','TGGMasthead':'/TopNav/StoreLocationTradingHours'});"><span class="hidden-sm">Store Locator &amp; Trading Hours</span> <i class="fa fa-map-marker visible-sm"></i></a>
+                                <a href="https://www.thegoodguys.com.au/store-locator" title="Store Locator &amp; Trading Hours" onclick="dataLayer.push({'event':'TGGMNav1','TGGMasthead':'/TopNav/StoreLocationTradingHours'});"><span class="hidden-sm hidden-md">Store Locator &amp; Trading Hours</span> <i class="fa fa-map-marker visible-sm visible-md"></i></a>
                             </li>
                             <li>
-                                <a title="Login or Register" id="signInOutQuickLink" href="https://www.thegoodguys.com.au/LogonForm?myAcctMain=1&amp;catalogId=30000&amp;langId=-1&amp;storeId=900" onclick="dataLayer.push({'event':'TGGMNav1','TGGMasthead':'/TopNav/LoginRegister'});"><span class="hidden-sm">Login or Register</span> <i class="fa fa-user visible-sm"></i></a>
+                                <a title="Login or Register" id="signInOutQuickLink" href="https://www.thegoodguys.com.au/LogonForm?myAcctMain=1&amp;catalogId=30000&amp;langId=-1&amp;storeId=900" onclick="dataLayer.push({'event':'TGGMNav1','TGGMasthead':'/TopNav/LoginRegister'});"><span class="hidden-sm hidden-md">Login or Register</span> <i class="fa fa-user visible-sm visible-md"></i></a>
                             </li>
                         </ul>
                     </nav>
                     <!-- Show only tablet and up -->
-                    <section id="minicartSection" class="col-xs-2 col-sm-2 col-md-2 minicart-container">
+                    <section id="minicartSection" class="col-sm-2 col-md-2 minicart-container padd-sm-0">
                         <div id="miniShopCartSection">
                             <span id="MiniShoppingCart_Label" class="spanacce">Shopping Cart</span>
                             <a class="mobile_cart" href="https://www.thegoodguys.com.au/OrderCalculate?updatePrices=1&amp;calculationUsageId=-1&amp;errorViewName=AjaxOrderItemDisplayView&amp;catalogId=30000&amp;langId=-1&amp;URL=https%3A%2F%2Fwww.thegoodguys.com.au%2FAjaxOrderItemDisplayView&amp;storeId=900&amp;orderId=.">
@@ -557,9 +576,9 @@
                     <section class="visible-xs" id="mobile-search">
                         <div class="col-xs-2 cross"><span data-canvas="body" data-target=".navbar-offcanvas" data-toggle="offcanvas" class="navbar-toggle" type="button"><i class="fa fa-times"></i></span></div>
                         <!-- <form class="col-xs-12" role="form">
-            <input name="q" placeholder="Search" class="searchbox" id="search-input">
-            <button type="submit" id="searchsubmit" value="Search" class="btn"><i class="fa fa-search"></i></button>
-          </form> -->
+                        <input name="q" placeholder="Search" class="searchbox" id="search-input">
+                        <button type="submit" id="searchsubmit" value="Search" class="btn"><i class="fa fa-search"></i></button>
+                      </form> -->
                     </section>
                 </div>
             </div>
