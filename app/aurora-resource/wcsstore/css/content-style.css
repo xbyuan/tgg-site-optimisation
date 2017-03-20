@@ -6551,8 +6551,8 @@ a.list-group-item-danger.active:hover {
 .embed-responsive.embed-responsive-4by3 {
     padding-bottom: 75%
 }
-
-.close {
+/*Start Refactor*/
+/*.close {
     float: right;
     font-size: 21px;
     font-weight: 700;
@@ -6570,8 +6570,8 @@ a.list-group-item-danger.active:hover {
     cursor: pointer;
     opacity: .5;
     filter: alpha(opacity=50)
-}
-
+}*/
+/*End Refactor*/
 button.close {
     padding: 0;
     cursor: pointer;
@@ -11768,7 +11768,8 @@ div#widget_breadcrumb.Leftwidget_breadcrumb>ul {
         min-height: 100px
     }
 }
-.tggcontent .page-footer {
+/*Start Refactor Change Point*/
+/*.tggcontent .page-footer {
     margin-top: 40px;
     clear: both;
     border: none;
@@ -11872,6 +11873,7 @@ div#widget_breadcrumb.Leftwidget_breadcrumb>ul {
         width: 49%
     }
 }
+*/
 @media (max-width:768px) {
     .carousel-title {
         font-size: 3em

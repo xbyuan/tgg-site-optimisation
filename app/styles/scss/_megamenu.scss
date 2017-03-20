@@ -1,23 +1,18 @@
+/*This file has been reviewed and cleaned by James on 17.03.2017 -- CSS are ready to go*/
 .ggds {
 /* ---------------------------------------------------------------- */
 /* Navigation: Main menu
 /* ---------------------------------------------------------------- */
 .menu-main ul {padding: 0}
-    .menu-main .menu-main-item {
-        position: static;
-        float: none;
-        display: inline-block;
-    }
-    .menu-main .menu-main-products { position: relative; }
+    .menu-main .menu-main-item {display: inline-block}
 /* Top tier  */
 .menu-main li > .menu-main-label {
-    position: relative;
+    display: block;
+    padding: 7px 25px 6px 15px;
     cursor: pointer;
     font-family: $font-family-fancy;
     font-size: 1.35em;
     text-transform: uppercase;
-    display: block;
-    padding: 7px 25px 6px 15px;
     line-height: 1.5;
     color: #fff;
     font-weight: 500;
@@ -27,15 +22,15 @@
         color: #fff;
     }
     .menu-main li:hover > .menu-main-label:after {
-        content: '';
-        width: 100%;
-        height: 5px;
-        background-color: $brand-info;
         position: absolute;
         left: 0;
         top: 100%;
+        width: 100%;
+        height: 5px;
         margin-top:-5px;
+        content: '';
         z-index: 3021;
+        background-color: $brand-info;
     }
     .menu-main li > .menu-main-label .fa {
         margin-left: 10px;
@@ -85,14 +80,14 @@
                 text-decoration: none;
                 border-bottom: 1px solid rgba(0,0,0,0.1);
             }
-            .menu-main-l1 li:first-child > a { border-top: 1px solid rgba(0,0,0,0.1); }
+            .menu-main-l1 li:first-child > a { border-top: 1px solid rgba(0,0,0,0.1);}
 
     .menu-main-l1 li:hover {
-        background-color: $brand-info;
         margin-top: -1px;
+        background-color: $brand-info;
         border-top: 1px solid $brand-info;
     }
-    .menu-main-l1 li:hover > a { color: #fff; }
+    .menu-main-l1 li:hover > a { color: #fff}
 
     /* Icon placement */
     .menu-main-l1 li .fa {
@@ -107,10 +102,10 @@
     left: 100%;
     width: 100%;
     height: 100%;
-    background-color: $brand-info;
     padding-top: 15px;
     padding-bottom: 15px;
     color: #fff;
+    background-color: $brand-info;
     visibility: hidden;
     opacity: 0;
     box-shadow: 0 15px 10px -10px rgba(0,0,0,0.15);
@@ -145,9 +140,9 @@
     .menu-main-l2 li:first-child > a { border-top: 1px solid desaturate(lighten($brand-info,7%),5%); }
 
     .menu-main-l2 li:hover {
-        background-color: desaturate(lighten($brand-info,7%),5%);
         margin-top: -1px;
         border-top: 1px solid desaturate(lighten($brand-info,7%),5%);
+        background-color: desaturate(lighten($brand-info,7%),5%);
 
     }
         .menu-main-l2 li:hover > a {
@@ -193,8 +188,7 @@
     }
 
     /* Conditional class if 2 columns are needed */
-    .menu-main-l3.wide { width: 450px; }
-
+    .menu-main-l3.wide { width: 450px}
     .menu-main-l3 li {
         float: left;
         min-width: 215px;
@@ -206,9 +200,9 @@
         border: 0;
     }
     .menu-main-l3 li:hover {
-        background-color: transparent;
         margin-top: 0;
         border-top: 0;
+        background-color: transparent;
     }
     .menu-main-l3 li:hover > a {
         color: $brand-danger;
@@ -245,14 +239,14 @@
 /* ---------------------------------------------------------------- */
     /* Add background and borders to megamenus */
     .megamenu-content {
+        min-height: 380px;
+        padding: 15px;
         background-color: $gray-lightest;
         z-index: 100;
         border-bottom: 3px solid $brand-secondary;
         border-right: 1px solid $gray-light;
         border-left: 1px solid $gray-light;
-        min-height: 380px;
         line-height: 1.2;
-        padding: 15px;
         opacity: 0;
         transition: all 0.15s linear;
         box-shadow: -10px 10px 20px -1px rgba(0,0,0,0.15),
@@ -263,10 +257,10 @@
         transition: all 0.15s linear;
     }
     .megamenu-content ul {
-        margin: 0;
-        list-style: none;
         display: inline-block;
+        margin: 0;
         float: none;
+        list-style: none;
         vertical-align: top;
     }
         .megamenu-content ul li {
@@ -275,10 +269,10 @@
         }
     /* Remove border from all anchors inside megemenu when not on mobile */
     .megamenu-content a {
-        border: none;
-        color: $brand-primary;
         display: inline-block;
         padding: 0.3em 0;
+        border: none;
+        color: $brand-primary;
     }
         .megamenu-content a.link { color: $brand-primary; }
         .megamenu-content a:hover {
@@ -287,21 +281,21 @@
         }
     /* Column titles and list elements */
     .megamenu-content .coltitle {
+        display: block;
+        padding: 1em 0 0.5em 0;
+        margin: 0;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 1.5em;
         font-family: $font-family-fancy;
         color: #000;
         border: none;
-        padding: 1em 0 0.5em 0;
-        margin: 0;
         line-height: 1;
-        display: block;
     }
         .megamenu-content .coltitle a,
         .megamenu-content .coltitle span {
-            color: #000;
             padding: 0;
             margin: 0;
+            color: #000;
         }
 }

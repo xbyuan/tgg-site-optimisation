@@ -47,10 +47,16 @@ h6 {
 a {
     color: #1966af
 }
-a:hover {
+/*Start Refactor*/
+/*a:hover {
     color: #ee4532!important;
     text-decoration: underline
+}*/
+a:hover {
+    color: #ee4532;
+    text-decoration: underline
 }
+/*End Refactor*/
 .onpage-link {
     color: #41aaf2
 }

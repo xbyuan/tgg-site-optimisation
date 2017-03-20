@@ -1,89 +1,47 @@
+/*This file has been reviewed and cleaned by James on 20.03.2017 -- CSS are ready to go*/
 .ggds{
 
 /* ---------------------------------------------------------------- */
 /* Header
 /* ---------------------------------------------------------------- */
-
-#masthead { position: relative;  }
-
-
+#masthead .small-nav > li > a:hover {
+    color: $brand-secondary;
+    text-decoration: underline;
+}
 /* Masthead branding and logo */
 .masthead-header {
-    background: #fff;
-    color: $brand-primary;
-    font-size: 1.5em;
-    vertical-align: middle;
-    text-align: center;
-    padding: 5px 0;
-    float: none;
     min-height: 50px;
-    max-height: 70px;
+    padding: 5px 0;
 }
-    .masthead-branding-logo {
-        display: block;
-        padding: 3px 0;
-        margin: 0;
-        position: relative;
-        width: 100%;
-        min-height: 50px;
-    }
-        .masthead-branding-logo img {
-            margin: 0 auto;
-            max-height: 50px;
-            padding: 0;
-            display: inline-block;
-            white-space: nowrap;
-            vertical-align: middle;
-            vertical-align: -webkit-baseline-middle;
+        .masthead-branding-logo {
+            min-height: 50px;
+            padding: 0 0 5px;
         }
+        .masthead-branding-logo img {max-height: 50px}
 
     @media screen and (min-width: $screen-sm) {
-
-       .masthead-header {
-            padding-top: 0;
-            font-size: 1em;
-            background: transparent;
-       }
-
-        .masthead-branding-logo {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            display: block;
-            min-height: 50px;
-        }
-            .masthead-branding-logo img { margin: 0; }
-
+       .masthead-header {padding-top: 0}
     } // End @media small
 
-
     .masthead-header .supplementary {
-        text-align: right;
         padding-top: 20px;
+        text-align: right;
     }
-
 /* Mobile search ----------------------------------------------------- */
 .search-mobile {
-    padding: 0.5em 0;
+    padding-bottom: 0.5em;
     margin: 0 auto;
     position: relative;
     font-size: 1.5em;
 }
-    .search-mobile form {
-        position: relative;
-        width: 100%;
-        text-align: left;
-    }
+
     .search-mobile .searchbox {
         display: block;
-        border: 1px solid #ccc;
-        line-height: 1.5;
-        box-shadow: none;
         padding: 4px 45px 4px 10px;
-        margin: 0;
-        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: none;
         color: $gray;
         font-size: 0.9em;
-        width: 100%;
         border-radius: 0 6px 6px 0;
         transition: background 1s linear;
     }
@@ -100,6 +58,7 @@
         right: 0;
         top: 0;
         width: 45px;
+        height: 38px;
         padding: 0.26em 0.4em;
         color: #fff;
         font-size: 1.2em;
@@ -111,8 +70,8 @@
         border-radius: 0 6px 6px 0;
     }
         .search-mobile .btn:active,
-        .search-mobile .btn:hover { color: $brand-info; }
-
+        .search-mobile .btn:hover {color: $brand-info}
+            .search-mobile .btn .fa {line-height: 26px}
 
 @media screen and (min-width: $screen-sm) {
 
@@ -127,10 +86,10 @@
     #search .searchbox {
         display: block;
         max-width: 100%;
-        line-height: 1;
-        box-shadow: none;
         padding: 6px 8px 4px 30px;
         margin: 0;
+        line-height: 1;
+        box-shadow: none;
         background: $gray-lighter;
         color: $gray-darker;
         border: 1px solid $gray-light;
@@ -145,21 +104,21 @@
             border-color: $gray;
             outline: none;
         }
-            #search .searchbox:focus + .btn { color: $gray-dark; }
+            #search .searchbox:focus + .btn {color: $gray-dark}
 
         #search .btn {
-            background: none;
-            border: none;
-            color: $gray;
-            font-size: 1.3em;
-            outline: none;
             position: absolute;
             right: inherit;
             left: 17px;
             top: -2px;
             width: 32px;
+            background: none;
+            border: none;
+            color: $gray;
+            font-size: 1.3em;
+            outline: none;
         }
-            #search .btn:hover { color: $brand-info; }
+            #search .btn:hover {color: $brand-info}
 }
 .search-mobile #searchsubmit {height: 38px}
 .search-mobile #searchsubmit i.fa-search {line-height: 26px}

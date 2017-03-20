@@ -5,6 +5,7 @@
 // Masthead CSS (Including this file and get rid of "header.css", "bootstrap.min.css" )
 @import "scss/_masthead.scss";
 @import "scss/_megamenu.scss";
-@import "scss/minicart.scss";
+@import "scss/_minicart.scss";
+@import "scss/_masthead.mobile.scss";
 // Temporary Overriding CSS File (To Do: Clean up this file after removed relevant CSSes in Aurora)
 @import "scss/_temp-override.scss";

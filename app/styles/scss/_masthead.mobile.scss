@@ -1,0 +1,231 @@
+/*This file has been reviewed and cleaned by James on 17.03.2017 -- CSS are ready to go*/
+.ggds{
+/* Mobile Minicart and Menu Toggle Icons  */
+.mobile-minicart-svg {
+    width: 45px;
+    height: 40px;
+    padding-top: 10px;
+}
+.mobile-toggle-svg {
+    max-width: 30px;
+    height: 36px;
+    padding-top: 12px;
+}
+.fill-primary {
+    fill: $brand-primary;
+}
+/* Mobile Menu ----------------------------------------------------- */
+.mobilemenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background: rgba(25, 102, 175, 0.9);
+    z-index: 2001;
+    transition: all 0.5s ease-in-out;
+}
+/* Mobile Menu: Header ----------------------------------------------------- */
+.mobilemenu-header {
+    position: relative;
+    left: 80%;
+    width: 20%;
+    height: 10vh;
+    transition: width .5s, left .5s;
+}
+    .productNavOpen .mobilemenu-header {width: 100%; left: 0;}
+    // .mobilemenu-header.expand {
+    //     background: rgba(0,0,0,0.4);
+    // }
+    .mobilemenu-header .mobilemenu-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 10vh;
+        padding: 0.75em;
+        z-index: 30;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .mobilemenu-header .mobilemenu-back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 31;
+        height: 10vh;
+        padding: 1.25em 1.5em 1em 1.5em;
+        transition: opacity .5s, display .5s, left .5s;
+        opacity: 0;
+    }
+    .productNavOpen .mobilemenu-header .mobilemenu-back {opacity: 1; left: 0}
+
+        .mobilemenu-header .mobilemenu-icon-svg {
+            fill: #fff;
+            max-height: 35px;
+            max-width: 35px;
+        }
+/* Mobile Menu: Body ----------------------------------------------------- */
+    .mobilemenu-body {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 75vh;
+        z-index: -1;
+        opacity: 1;
+        transition: height 0.5s;
+        overflow-y: scroll;
+    }
+    .productNavOpen .mobilemenu-body {height: 90vh}
+    .mobilemenu-body.offpage {
+        left: -100%;
+        transition: all 0.5s ease-in-out;
+    }
+    .mobilemenu-body-products {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        width: 100%;
+        height: 100vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        margin-right: 0;
+        z-index: -1;
+        overflow-y: auto;
+        transition: all 0.25s ease-in-out;
+        transition-delay: 0.5s;
+    }
+        .mobilemenu-body-products.offpage {
+            right: -100%;
+            transition: all 0.5s;
+        }
+
+        .mobilemenu ul {
+            padding: 0;
+            margin: 0;
+            font-family: $font-family-fancy;
+            list-style: none;
+        }
+    /* Mobile Menu: Menu Items ----------------------------------------------------- */
+    .mobilemenu .menuitem {
+        display: block;
+        padding: 1vh 0;
+        color: #fff;
+        text-align: center;
+        font-family: $font-family-fancy;
+        font-weight: 500;
+        font-size: 10vh;
+        line-height: 10vh;
+        text-transform: uppercase;
+        transition: color 0.2s, background 0.5s;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
+    }
+        .mobilemenu .menuitem-products { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+        .mobilemenu .menuitem:focus,
+        .mobilemenu .menuitem:hover,
+        .mobilemenu .menuitem:active,
+        .mobilemenu .menuitem.active
+         {
+            color: $brand-primary;
+            text-decoration: none;
+            background-color: #fff;
+        }
+
+    /* Mobile Menu: Menu Items - Product Menu ----------------------------------------------------- */
+    .products-dropdown .menuitem {
+        padding: 0.5em;
+        line-height: 1.1em;
+        text-align: left;
+        font-size: 2.25em;
+    }
+    /* Mobile Menu: Footer ----------------------------------------------------- */
+    .mobilemenu-footer {
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        width: 100%;
+        height: 15vh;
+        background-color: rgba(255,255,255,0.2);
+        border-bottom: 10px solid $brand-danger;
+        text-align: center;
+        transform-origin: bottom center;
+        transition: all 0.5s ease-in;
+    }
+        .productNavOpen .mobilemenu-footer {
+            bottom: -15vh;
+            max-height: 0;
+            opacity: 0;
+        }
+        .mobilemenu-footer .mobilemenu-icon-svg {
+            display: inline-block;
+            max-height: 45px;
+            max-width: 50px;
+            fill: #fff;
+        }
+        .mobilemenu-footer a {
+            display: block;
+            padding-top: 0.5em;
+            font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
+        }
+        .mobilemenu-footer .menu-label {
+            display: block;
+            line-height: 1;
+        }
+
+    @media screen and (orientation: landscape) {
+
+        .mobilemenu-header {
+            width: 15vw;
+            height: 15vh;
+            transition: all 0.2s linear;
+        }
+            .mobilemenu-header .mobilemenu-back,
+            .mobilemenu-header .mobilemenu-close {
+                padding-top: 0.75em;
+                height: 15vh;
+                transition: all 0.25s linear;
+            }
+
+        .mobilemenu-body {
+            left: 15vw;
+            top: 10vh;
+            width: 70vw;
+            height: 100%;
+        }
+        .mobilemenu-body-products {
+            top: 13vh;
+        }
+
+        .mobilemenu .menuitem {
+            padding-left: 30px;
+            font-size: 13vh;
+            line-height: 15vh;
+            text-align: left;
+        }
+            .products-dropdown .menuitem {
+                padding: 0.5em 1em;
+                font-size: 2.25em;
+                line-height: 1.1em;
+                text-align: left;
+            }
+        .mobilemenu-footer {
+            left: 0;
+            width: 15vw;
+            height: 100%;
+        }
+        .productNavOpen .mobilemenu-footer {
+            left: -15vw;
+            bottom: 0;
+            max-height: 0;
+            opacity: 0;
+        }
+            .mobilemenu-footer-item {
+                float: none;
+                width: 100%;
+                padding: 15px;
+            }
+    }
+}
