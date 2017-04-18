@@ -3,6 +3,12 @@
 /* ---------------------------------------------------------------- */
 /* Navigation: Main menu
 /* ---------------------------------------------------------------- */
+.navbar-nav .mkr.menu-main-dropdown .megamenu-container {left: -682px}
+.navbar-nav #DAndCLI .megamenu-container {left: -290px}
+.megamenu-content li a {
+    display: block;
+    text-align: left;
+}
 .menu-main ul {padding: 0}
     .menu-main .menu-main-item {display: inline-block}
 /* Top tier  */
@@ -298,4 +304,8 @@
             margin: 0;
             color: #000;
         }
+    
+    @media screen and (max-width: $screen-xs) {
+        .nav_model {display: none}
+    }
 }

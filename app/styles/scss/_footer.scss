@@ -1,67 +1,72 @@
 /*To do: Think about better options for the images that being use in this file*/
 .ggds {
-    .footer-content {
-        margin-top: 25px;
-        background: #eee;
-        text-align: left;
-        font-weight: 500;
+
+    .nav-footer h4 {
+        font-size: 1.6rem;
+        font-weight: 400;
     }
-        .footer-content ul {padding: 0}
-        .footer-content ul li {
-            display: inline-block;
-            width: 49%;
-            padding-right: 5%;
-            list-style: none;
-        }
-        .footer-content .fa {color: $brand-primary}
-    .footer-logo {max-width: 260px; margin-top: -25px}
-    .footer-aside-content {
-        min-height: 480px;
-        margin-top: -25px;
-        background-color: #fff;
+
+    @media(min-width: $screen-sm) and (max-width: $screen-md) {
+        .nav-footer h4 {font-size: 1.6rem}
     }
-        .footer-aside-content .section {padding-bottom: 15px}
-            .footer-aside-content .footer-icon {
-                display: inline-block;
-                min-height: 32px;
-            }
-            .footer-aside-content .icon-verified {
-                min-width: 220px;
-                background: url(../aurora-resource/cs/groups/public/documents/graphic/sprite-icons-main.png) no-repeat 0 -35px;
-            }
-            .footer-aside-content .icon-payment-methods {
-                width: 226px;
-                background: url(../aurora-resource/cs/groups/public/documents/graphic/sprite-icons-main.png) no-repeat -3px -69px;
-            }
-            .footer-aside-content .icon-payment-methodge {
-                width: 227px;
-                background: url(../aurora-resource/cs/groups/public/documents/graphic/sprite-icons-main.png) no-repeat -231px -69px;
-            }
-            .footer-aside-content .icon-facebook {
-                background: url(../aurora-resource/cs/groups/public/documents/graphic/sprite-icons-main.png) no-repeat -3px -250px;
-            }
-            .footer-aside-content .icon-twitter {
-                background: url(../aurora-resource/cs/groups/public/documents/graphic/sprite-icons-main.png) no-repeat -36px -250px;
-            }
-            .footer-aside-content .icon-youtube {
-                background: url(../aurora-resource/cs/groups/public/documents/graphic/sprite-icons-main.png) no-repeat -72px -250px;
-            }
-            .footer-aside-content .icon-googleplus {
-                background: url(../aurora-resource/cs/groups/public/documents/graphic/sprite-icons-main.png) no-repeat -140px -250px;
-            }
-            .footer-aside-content .icon-the-good-blog {
-                width: 118px;
-                float: left;
-                background: url(../aurora-resource/cs/groups/public/documents/graphic/sprite-icons-main.png) no-repeat -259px -252px;
-            }
-            .footer-aside-content .social-media {
-                width: 33px;
-                height: 31px;
-                float: left;
-            }
-            .footer-aside-content .social-media:hover {opacity: .8}
-    .footer-bottom {
+
+    .nav-footer ul li {
+        font-size: 1.1em;
+        line-height: 30px;
+    }
+
+    .footer-content ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .nav-footer .footer-bottom {
         padding: 20px 0;
-        background-color: #fff;
+        margin: 0;
+        height: inherit;
+        background: $brand-primary;
+        color: #fff;
     }
+
+    @media(min-width: $screen-sm) {
+        .max-width-555-desk {max-width: 555px}
+    }
+
+    .footer-logo {
+        max-width: 260px;
+        margin-top: -20px;
+    }
+
+    .footer-content {background: $gray-light}
+
+    .fa-external-link {color: $brand-primary}
+
+    .footer-content h4 {border-bottom: 2px solid #fff}
+
+    .footer-content h4:after {
+        content: '';
+        display: block;
+        margin-bottom: -2px;
+        height: 5px;
+        border-bottom: 2px solid $brand-secondary;
+    }
+
+    .footer-content .shoponline h4:after {max-width: 130px}
+
+    .footer-content .abouts h4:after {max-width: 70px}
+
+    .footer-content .topbrands h4:after,
+    .footer-content .easypayment h4:after {
+        max-width: 170px;
+    }
+
+    .footer-content .customerservice h4:after,
+    .footer-content .shopfast h4:after {
+        max-width: 180px;
+    }
+
+    .socialmedia > div {
+        padding-left: 0;
+    }
+
 }

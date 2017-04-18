@@ -1,6 +1,12 @@
 /*This file has been reviewed and cleaned by James on 20.03.2017 -- CSS are ready to go*/
 .ggds{
-
+#searchDropdown{
+    position: absolute;
+    left: 10px;
+    right: -25px;
+    top: 38px;
+    z-index:1006
+}
 /* ---------------------------------------------------------------- */
 /* Header
 /* ---------------------------------------------------------------- */
@@ -15,12 +21,13 @@
 }
         .masthead-branding-logo {
             min-height: 50px;
-            padding: 0 0 5px;
+            padding: 10px 0 5px;
         }
         .masthead-branding-logo img {max-height: 50px}
+        .masthead-branding-logo .mkr-logo {padding-top: 3px}
 
     @media screen and (min-width: $screen-sm) {
-       .masthead-header {padding-top: 0}
+       .masthead-header {padding-top: 0; padding-bottom: 6px}
     } // End @media small
 
     .masthead-header .supplementary {
@@ -72,6 +79,7 @@
         .search-mobile .btn:active,
         .search-mobile .btn:hover {color: $brand-info}
             .search-mobile .btn .fa {line-height: 26px}
+        #searchDropdown {z-index: 1006}
 
 @media screen and (min-width: $screen-sm) {
 
