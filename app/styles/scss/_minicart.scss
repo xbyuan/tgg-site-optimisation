@@ -91,4 +91,8 @@
         .minicart-icon a { margin-left: 7px}
     }
 
+    @media screen and (max-width: $screen-xs) {
+        .minicart-icon-mobile {padding-left: 0}
+        #masthead .brand .mkr-logo img.good_guy_logo {margin-top: 0}
+    }
 }
