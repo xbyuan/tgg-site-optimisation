@@ -8,6 +8,7 @@
   },
   "homepage": "https://github.com/lifeonlars/tgg-site-optimisation",
   "dependencies": {
+    "gulp-uglifycss": "^1.0.8",
     "http-server": "~0.9.0"
   },
   "private": true,
