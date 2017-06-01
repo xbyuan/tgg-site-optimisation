@@ -22,3 +22,15 @@
 /* common1_1.css */
 /*-------------------------------------------------------------*/
 /* Changes refer to common1_1.css*/
+
+.ggds .spanacce {display: none}
+/*Temp fix for content-style.css, please delete below after get masthead live*/
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+	#masthead .col-sm-2.supplementary {
+	    width: 33.3333333333%;
+	    left: initial;
+	}
+	#masthead #search.col-sm-3 {
+	    left: initial;
+	}
+}

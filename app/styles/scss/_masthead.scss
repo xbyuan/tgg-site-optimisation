@@ -1,12 +1,26 @@
 /*This file has been reviewed and cleaned by James on 20.03.2017 -- CSS are ready to go*/
 .ggds{
-#searchDropdown{
+.search-dropdown{
     position: absolute;
     left: 10px;
     right: -25px;
-    top: 38px;
+    top: 32px;
     z-index:1006
 }
+.search-dropdown-inner {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.search-dropdown-inner ul {padding-left: 0; margin: 0}
+.search-dropdown-inner ul li {list-style: none}
+.search-dropdown-inner ul li.heading {background-color: $gray-light-4}
+.search-dropdown-inner ul li.search-advanced {padding: 15px; background-color: #fff}
+.autoSuggestDivNestedList li {padding: 15px; border-bottom: 1px solid $gray-light-1}
+.autoSuggestDivNestedList li:hover,
+.search-dropdown-inner ul li.search-advanced:hover {background-color: #d9e9f7}
+.autoSuggestDivNestedList li a {color: $brand-primary}
+.autoSuggestDivNestedList li a:hover {color: $brand-danger}
+
 /* ---------------------------------------------------------------- */
 /* Header
 /* ---------------------------------------------------------------- */
@@ -45,6 +59,8 @@
     .search-mobile .searchbox {
         display: block;
         padding: 4px 45px 4px 10px;
+        width: 90%;
+        background-color: $gray-light-5;
         border: 1px solid #ccc;
         box-shadow: none;
         color: $gray;
@@ -133,7 +149,6 @@
 
     @media screen and (min-width: $screen-xs) {
         #search {
-            margin-top: 15px;
             padding-left: 10px;
         }
         #search .btn {
@@ -167,4 +182,3 @@
 
     .supplementary .small-nav > li:last-child {border-right: 0 none}
 }
-
