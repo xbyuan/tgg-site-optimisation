@@ -1,0 +1,121 @@
+<style type="text/css">
+	.ggds .slashing-price {
+		position: relative;
+		background-color: #ec1d23;
+		background-image: url('/cs/groups/public/documents/graphic/slashing-price-talent-1.png'), url('/cs/groups/public/documents/graphic/slashing-price-talent-2.png'), linear-gradient(to bottom, #ac030e 0%, #cf0023 5%, #ee0029 13%, #ee0029 93%, #cf0023 98%, #ac030e 100%);
+		background-position: left bottom, right bottom;
+		background-repeat: no-repeat;
+	}
+	@media screen and (max-width: 1366px) {
+		.ggds .slashing-price {
+			background-image: linear-gradient(to bottom, #ac030e 0%, #cf0023 5%, #ee0029 13%, #ee0029 93%, #cf0023 98%, #ac030e 100%);
+		}
+	}
+	@media screen and (min-width: 1367px) and (max-width: 1600px) {
+		.ggds .slashing-price {
+			background-size: 300px, 300px, contain;
+    		background-position: -75px bottom, right bottom, center;
+		}
+	}
+	@media screen and (min-width: 1601px){
+		.ggds .slashing-price {
+			background-size: 360px, 380px, contain;
+		}
+	}
+	.ggds .slashing-price::before,
+	.ggds .slashing-price::after {
+		content: '';
+		display: block;
+		height: 36px;
+		background: url('/cs/groups/public/documents/graphic/slashing-price-bg.png') repeat-x left center;
+	}
+	.ggds .slashing-price::before {transform: rotateX(180deg)}
+	.ggds .slashing-price::after {
+		position: absolute; 
+		bottom: 0; 
+		left: 0; 
+		right: 0;
+		background-position: 75% bottom;
+	}
+	.ggds .btn-ghost-danger,
+	.ggds .btn-ghost-danger:focus {
+		background-color: #fff;
+		color: #ec1d23;
+	}
+	.ggds .btn-ghost-danger:active,
+	.ggds .btn-ghost-danger:hover {
+		background-color: #ec1d23;
+	}
+	.ggds .slashing-price-slick a {
+		display: block;
+		cursor: pointer;
+	}
+	.ggds .slashing-price-signup {
+		height: 120px;
+		margin-top: 50px;
+	}
+	.ggds .slashing-price-products a {
+		display: block;
+		cursor: pointer;
+	}
+	.ggds .slashing-price-products a img {
+		margin: 0 auto;
+	}
+	.ggds .slick-prev::before, .slick-next::before {
+	    font-family: 'slick';
+	    font-size: 20px;
+	    line-height: 1;
+	    opacity: .75;
+	    color: white;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	}
+</style>
+<div class="ggds">
+	<section class="slashing-price">
+		<article class="container marg-bottom-20">
+			<aside class="col-sm-7 col-lg-9">
+				<img class="img-responsive" src="/cs/groups/public/documents/graphic/slashing-price-heading.png">
+			</aside>
+			<aside class="col-sm-5 col-lg-3 padd-top-20 clearfix">
+				<button type="button" class="btn btn-ghost btn-ghost-danger pull-right">
+					BROWSE SLASHED PRICE PRODUCTS
+					<i class="fa fa-chevron-right" aria-hidden="true"></i>
+				</button>
+			</aside>
+		</article>
+		<article class="container">
+			<div class="slashing-price-slick marg-bottom-15">
+				<div><a><img src="/cs/groups/public/documents/graphic/slashing-price-banner-1.jpg"></a></div>
+				<div><a><img src="/cs/groups/public/documents/graphic/slashing-price-banner-1.jpg"></a></div>
+				<div><a><img src="/cs/groups/public/documents/graphic/slashing-price-banner-1.jpg"></a></div>
+			</div>
+		</article>
+		<article class="container slashing-price-products padd-bottom-30">
+			<aside class="col-sm-3 padd-15">
+				<a><img class="img-responsive" src="/cs/groups/public/documents/graphic/slashing-price-promo-product-1.png" alt=""></a>
+			</aside>
+			<aside class="col-sm-3 padd-15">
+				<a><img class="img-responsive" src="/cs/groups/public/documents/graphic/slashing-price-promo-product-2.png" alt=""></a>
+			</aside>
+			<aside class="col-sm-3 padd-15">
+				<a><img class="img-responsive" src="/cs/groups/public/documents/graphic/slashing-price-promo-product-3.png" alt=""></a>
+			</aside>
+			<aside class="col-sm-3 padd-15">
+				<a><img class="img-responsive" src="/cs/groups/public/documents/graphic/slashing-price-promo-product-4.png" alt=""></a>
+			</aside>
+		</article>
+	</section>
+	<section class="container slashing-price-signup">
+		<a class="disp-block"><img class="img-responsive" src="/cs/groups/public/documents/graphic/slashing-price-signup.png" alt=""></a>
+	</section>
+</div>
+<link rel="stylesheet" href="/wcsstore/AUOnlineSAS/css/slick-carousel.css" type="text/css">
+<script type="text/javascript" src="/wcsstore/AUOnlineSAS/javascript/slick-carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slashing-price-slick').slick({
+  	"nextArrow": ""
+  });
+});
+</script>

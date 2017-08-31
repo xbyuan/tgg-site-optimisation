@@ -1,3 +1,4 @@
+#masthead {background-color: #fff}
 /*-------------------------------------------------------------*/
 /* style.css */
 /*-------------------------------------------------------------*/
@@ -13,6 +14,13 @@
         padding: 0;
     }
 }
+.tggcontent .modal .modal-header {
+	padding: 10px 10px 10px 20px;
+    font-size: 1.5rem;
+    min-height: 16.43px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 400;
+}
 /*-------------------------------------------------------------*/
 /* bass.css */
 /*-------------------------------------------------------------*/
@@ -23,7 +31,7 @@
 /*-------------------------------------------------------------*/
 /* Changes refer to common1_1.css*/
 
-.ggds .spanacce {display: none}
+.ggds .spanacce {display: none; position: absolute; opacity: 0}
 /*Temp fix for content-style.css, please delete below after get masthead live*/
 @media screen and (min-width: 1024px) and (orientation: portrait) {
 	#masthead .col-sm-2.supplementary {
@@ -34,3 +42,67 @@
 	    left: initial;
 	}
 }
+.disp-none, .store_message {display: none}
+/*-------------------------------------------------------------*/
+/* Aurora system popups
+/*-------------------------------------------------------------*/
+/*Loading icon*/
+#progress_bar .bodyarea {
+	width: 54px;
+	height: 60px;
+	padding-top: 8px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 0 3px 12px rgba(0,0,0,.2), 0 3px 12px rgba(0,0,0,.2);
+}
+/*Compare alert*/
+.widget_site_popup .content_right_border {
+	background-color: #fff;
+	border: 3px solid #a3a3a3;
+    border-color: rgba(71,71,71,0.5);
+}
+.widget_site_popup .content_right_border .header {
+	background-color: #f5f6f7;
+    border-bottom: 1px solid #edeff0;
+    padding: 7px 20px 9px 10px;
+}
+.widget_site_popup .content_right_border .header span {font-size: 16px}
+.widget_site_popup .content_right_border .header .close {
+	width: 13px;
+    height: 13px;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    background-image: url(../images/colors/color1/close_sprite.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.widget_site_popup .content_right_border .body {padding: 22px 20px}
+.widget_site_popup .content_right_border .footer {
+	border-top: 1px solid #edeff0;
+	padding: 10px;
+}
+.widget_site_popup .content_right_border .footer .button_container {float: right}
+.widget_site_popup .content_right_border .footer .button_container_left {float: left}
+.button_primary {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #1966af;
+	color: #fff;
+}
+.clear_float {clear: both}
+/*System message*/
+.store_message {
+	display: none;
+	position: absolute;
+	left: 40%;
+	top: 10%;
+	width: 300px;
+	padding: 10px 20px;
+	background-color: #fff;
+	border: 2px solid #ccc;
+	z-index: 999;
+}
+.dijitDialogTitleBar {display: none}

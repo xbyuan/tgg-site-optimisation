@@ -1,0 +1,277 @@
+/* ---------------------------------------------------------------- */
+/* Aurora Override */
+/* ---------------------------------------------------------------- */
+.compare_target {
+    display: block;
+    font-size: inherit;
+    color: inherit;
+    line-height: 1.5;
+    min-width: initial;
+    font-weight: 400;
+    padding: initial;
+    text-align: initial;
+}
+.compare_target > a {margin: initial}
+/* ---------------------------------------------------------------- */
+/* Produdct Tiles */
+/* ---------------------------------------------------------------- */
+
+.ggds {
+    /* Only set height on grid layout as list can be variable */
+    .product-tile-inner {
+        position: relative;
+        padding-top: 10px;
+        margin: 3px 0;
+        min-height: 410px;
+        background: #fff;
+        border-radius: 2px;
+        @include card(2);
+    }
+    .product-tile-inner a:hover {
+        text-decoration: none;
+    }
+    .product-tile-inner .labl-tile {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: initial;
+    }
+    .product-tile-imagewrap {min-height: 215px}
+    .product-tile-thumb {
+        display: block;
+        text-align: center;
+    }
+    .product-tile-thumb img {
+        max-width: 215px;
+        height: auto;
+        display: inline-block;
+    }
+    .product-tile-thumb .tile-image-2 {
+        display: none;
+    }
+    .product-tile-imagewrap:hover .tile-image-1 {
+        display: none;
+    }
+    .product-tile-imagewrap:hover .tile-image-2 {
+        display: inline-block;
+    }
+    .compare-toggle {
+        margin-top: 8px;
+        text-align: center;
+    }
+    .compare-toggle-inner {
+        display: inline-block;
+    }
+    .compare-toggle-label {
+        padding-left: 8px;
+        border-radius: 6px;
+    }
+    .compare-toggle-label input {
+        float: left;
+        margin-top: 10px;
+    }
+    .compare-toggle-label label {
+        display: inline-block;
+        padding: 6px 4px;
+        float: left;
+    }
+    .compare-toggle-label .compare-toggle-link {
+        display: none;
+        padding: 6px 10px 6px 5px;
+        color: #fff;
+        background-color: $brand-info;
+        border-radius: 0 4px 4px 0;
+        text-transform: uppercase;
+    }
+    .compare-toggle-label[data-state="1"],
+    .compare-toggle-label[data-state="2"] {
+        background: $gray-light-3;
+    }
+    .compare-toggle-label[data-state="2"] .compare-toggle-link {
+        display: inline-block;
+        float: right;
+        line-height: 1.5;
+    }
+    .product-tile-name {
+        margin: 0;
+        padding: 0 20px 0.25em 20px;
+        height: 42px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.2;
+        overflow: hidden;
+    }
+    .product-tile-quickview {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        margin-left: -50px;
+        transition: all .2s ease-in-out;
+    }
+    .product-tile-imagewrap:hover .product-tile-quickview {
+        visibility: visible;
+        opacity: 1;
+    }
+    /* Product Tile: Price */
+    /* -------------------------------------------------------------------- */
+    .product-tile-price {
+        text-align: left;
+        padding: 5px 20px;
+        min-height: 70px;
+        border-top: 1px solid $gray-light-2;
+    }
+    .product-tile-price .price {
+        font-size: 3.75rem;
+        padding-top: 5px;
+        display: block;
+    }
+    .product-tile-price small {
+        font-size: 0.8em;
+        color: $gray-dark-3;
+        display: block;
+        line-height: 0.95;
+    }
+
+
+    /* Product Tile: Cashback styling */
+    /* -------------------------------------------------------------------- */
+    .pricepoint .beforecashback,
+    .pricepoint .aftercashback {
+        display: inline-block;
+        text-align: left;
+        padding: 0;
+    }
+    .pricepoint .aftercashback {
+        color: $labl-cashback;
+    }
+
+    .pricepoint .divider {
+        position: relative;
+        height: 100%;
+        min-height: 58px;
+    }
+    .pricepoint .divider::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        border-left: 1px solid $gray-light-2;
+    }
+
+    .pricepoint .aftercashback b,
+    .pricepoint .beforecashback b {
+        display: block;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+    .pricepoint .aftercashback b {
+        color: $brand-primary;
+    }
+
+    .pricepoint .aftercashback small,
+    .pricepoint .beforecashback small {
+        display: block;
+        line-height: 1;
+        font-size: .8rem;
+        font-family: $font-family-base;
+        color: $gray-dark-1;
+    }
+    .pricepoint.pricepoint strong {font-weight: 400}
+    /* Product Tile: Ticket price */
+    /* -------------------------------------------------------------------- */
+    .has-ticket .product-tile-imagewrap {}
+    .has-ticket .product-tile-imagewrap::before {
+        content: ' ';
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        height: 42px;
+        width: 66px;
+        background-image: url(../assets/images/callout-priceslash.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .has-ticket .product-tile-price .price {
+        font-size: 3.5rem;
+        padding-top: 0;
+    }
+
+    .product-tile-price .ticketprice {
+        font-size: 1.4rem;
+        color: #000;
+        text-transform: uppercase;
+    }
+    .product-tile-price .ticketprice span {
+        position: relative;
+        overflow: hidden;
+    }
+    .product-tile-price .ticketprice span:after {
+        content: ' ';
+        position: absolute;
+        top: 3px;
+        right: -1px;
+        width: 100%;
+        border-top: 2px solid $brand-danger;
+        transform: rotate(-30deg);
+        transform-origin: top right;
+    }
+
+
+    /* Product Tile: Footer */
+    /* -------------------------------------------------------------------- */
+    .revoo_wrapper {
+        padding: 5px;
+        min-height: 44px;
+        border-top: 1px solid $gray-light-2;
+        background: $gray-light-3;
+    }
+
+    /* Product Tile: List view  ------------------------*/
+    .productlist.list .product-tile {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .productlist.list .product-tile .inner-content {
+        border-bottom: 1px solid #dfdfdf;
+        min-height: inherit;
+        text-align: left;
+    }
+    .productlist.list .product-tile h4 {
+        padding: 0;
+        min-height: inherit;
+        font-size: 1.1em;
+        margin-top: 0;
+    }
+    .productlist.list .product-tile .model {
+        font-weight: 500;
+    }
+    .productlist.list .product-tile .thumb {
+        padding: 0;
+        position: relative;
+        z-index: 0;
+        text-align: center;
+    }
+    .productlist.list .product-tile .thumb img {
+        display: inline-block;
+    }
+    .productlist.list .product-tile .pricewrap {
+        margin-top: 15px;
+    }
+    .slick-slide.product-tile {
+        padding: 0 5px;
+    }
+    @media screen and (max-width: $screen-sm) {
+        .slider {padding: 0 30px}
+    }
+
+    // Slick Slider
+    .slick-slide a {display: block}
+    .slick-slide a > img {margin: auto}
+} // end .ggds namespace

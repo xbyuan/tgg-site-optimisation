@@ -1,7 +1,6 @@
 // Style Guide Variable & mixins (To Do: Clean up and get rid of most of them)
 @import "scss/_variables.scss";
 @import "scss/_mixins.scss";
-
 // Masthead CSS (Including this file and get rid of "header.css", "bootstrap.min.css" )
 @import "scss/_masthead.scss";
 @import "scss/_megamenu.scss";
@@ -9,5 +8,8 @@
 @import "scss/_masthead.mobile.scss";
 // Footer CSS (Including this file and get rid of relavent CSS in "content-style.css")
 @import "scss/_footer.scss";
+// Product Card CSS
+@import "scss/_product-tile.scss";
+@import "scss/_modal.scss";
 // Temporary Overriding CSS File (To Do: Clean up this file after removed relevant CSSes in Aurora)
 @import "scss/_temp-override.scss";

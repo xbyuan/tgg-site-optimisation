@@ -1,10 +1,16 @@
 /*This file has been reviewed and cleaned by James on 20.03.2017 -- CSS are ready to go*/
 .ggds {
+    @media screen and (min-width: $screen-md) {
+        .minicart-container {
+            padding-right: 0;
+            padding-left: 30px;
+        }
+    }
 
     .minicart-icon-mobile {padding-left: 10px}
     .minicart-icon-mobile a {
         display: inline-block;
-        width: 50px;
+        width: 45px;
         position: relative;
     }
 
@@ -25,23 +31,19 @@
     /* Minicart ----------------------------------------------------- */
     .minicart-section {
         position: relative;
-        min-height: 50px;
-        overflow: visible;
+        // overflow: visible;
         text-transform: uppercase;
-        color: $gray-darker;
     }
-        .minicart-icon {
-            padding: 0.6em 0 0 0;
-            margin-left: -10px;
-        }
+        .minicart-icon {padding: 0 10px;}
             .minicart-icon a {
                 display: inline-block;
+                margin: 2px 10px 0 5px;
             }
             .minicart-icon .icon {
                 display: inline-block;
-                height: 25px;
-                width: 25px;
-                fill: $brand-primary;
+                width: 36px;
+                height: 30px;
+                fill: $brand-success;
             }
         .minicart-section .summary {border-left: 1px solid $gray-light}
         .minicart-section h4 {
@@ -49,12 +51,13 @@
             font-family: $font-family-fancy;
             line-height: 1;
             clear: both;
+            font-size: 1.3em;
         }
         .minicart-dropdown {
             position: absolute;
             top: 100%;
             right: 0;
-            width: 250px;
+            width: 240px;
             max-height: 350px;
             background: $gray-lighter;
             @include card(1);
@@ -70,11 +73,10 @@
                 background: #fff;
                 transition: all ease-in-out 0.3s;
             }
-            .minicat-container .productwrap {padding: 3px 0}
+            .minicart-dropdown .products .clearfix {margin-bottom: 10px}
 
-                .minicat-container .cart-totalwrap { padding-bottom: 5px; margin-left: 35px; border-top: 1px solid $gray-lighter}
-                    .minicat-container .cart-totalwrap .total {font-weight: 600}
-                    .minicat-container .footer {padding-bottom: 10px}
+                .minicart-dropdown .cart-totalwrap { padding-bottom: 5px; padding-top: 10px; margin-left: 35px; border-top: 1px solid $gray-lighter}
+                    .minicart-dropdown .cart-totalwrap .product_price {font-weight: 600}
 
     @media screen and (min-width: $screen-sm) {
         .minicart-section {
@@ -82,17 +84,21 @@
             padding: 15px 0 5px 0;
             border-bottom: 3px solid $brand-success;
         }
-            .minicart-icon {padding: 0 15px}
-            .minicart-icon a {margin: 5px 10px 0 3px}
-            .minicart-icon .icon {fill: $brand-success}
+            // .minicart-icon {padding: 0 15px}
+            // .minicart-icon a {margin: 5px 10px 0 3px}
     }
 
-    @media screen and (min-width: $screen-md) {
-        .minicart-icon a { margin-left: 7px}
-    }
+    // @media screen and (min-width: $screen-md) {
+    //     .minicart-icon a { margin-left: 7px}
+    // }
 
     @media screen and (max-width: $screen-xs) {
         .minicart-icon-mobile {padding-left: 0}
-        #masthead .brand .mkr-logo img.good_guy_logo {margin-top: 0}
+        .minicart-container {padding: 0}
+    }
+    @media screen and (min-width: $screen-xs) and (max-width: $screen-lg) {
+        .minicart-icon .icon {width: 24px}
+        .minicart-icon a {margin-left: 0}
+        .minicart-section {padding-top: 10px}
     }
 }

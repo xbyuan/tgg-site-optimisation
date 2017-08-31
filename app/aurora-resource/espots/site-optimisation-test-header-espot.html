@@ -1,0 +1,21 @@
+<script type="text/javascript" src="/wcsstore/AUOnlineSAS/javascript/imagerotator/jquery-1.11.1.min.js"></script>
+<style type="text/css">
+.ggds p {margin: 0!important}	
+</style>
+<script>
+    $(document).ready(function() {
+		console.log("jQuery!");
+		$("html").addClass("ggds");
+		$("#contentRecommendationWidget_HomePage_JS_HeaderEspot").hide();
+		$("#contentRecommendationWidget_POC_CommonStaticContentEspot").hide();
+		$(".Leftwidget_breadcrumb").addClass('container padd-0');
+		$(".Leftwidget_breadcrumb > ul").addClass('padd-0 marg-top-10 marg-bottom-0');
+		$("div[id*='PageHeading']").addClass('container padd-0').removeClass('row');
+		$(".PageHeading").addClass('padd-0');
+		//$(".rowContainer > div").removeClass('row');
+		$("div[id*='container_'] > div").removeClass('row');
+		$(".margin-true.margin-false").addClass("container padd-0 clearfix");
+		$(".col4.acol12.ccol3").addClass("pull-left");
+		$("div[data-slot-id*='9']").addClass('pull-left');
+    });
+</script>
