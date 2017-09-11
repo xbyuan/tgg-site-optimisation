@@ -42,7 +42,6 @@
 	    left: initial;
 	}
 }
-.disp-none, .store_message {display: none}
 /*-------------------------------------------------------------*/
 /* Aurora system popups
 /*-------------------------------------------------------------*/
@@ -105,4 +104,11 @@
 	border: 2px solid #ccc;
 	z-index: 999;
 }
-.dijitDialogTitleBar {display: none}
+.dijitDialogTitleBar,
+.compareCheckboxLabels,
+.disp-none,
+.store_message {display: none}
+/*Home Page*/
+.ggds .slick-category-Horizontal .tile-thumb {min-height: 140px; display: flex}
+/*Quick View*/
+.tggcontent .modal-header h3 {font-size: 21px; margin: 0}

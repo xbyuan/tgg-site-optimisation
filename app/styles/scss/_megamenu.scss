@@ -283,7 +283,8 @@
         color: $brand-primary;
     }
         .megamenu-content a.link { color: $brand-primary; }
-        .megamenu-content a:hover {
+        .megamenu-content a:hover,
+        .megamenu-content .coltitle a:hover {
             background: transparent;
             color: $brand-danger;
         }
