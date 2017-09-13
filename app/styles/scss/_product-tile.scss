@@ -283,18 +283,29 @@
 /* ---------------------------------------------------------------- */
 /* Produdct Tiles (List Mode) */
 /* ---------------------------------------------------------------- */
-.list_mode .listview-product-img {padding: 40px 0 0 5px}
-.list_mode .listview-product-img .compare-toggle-label {padding-left: 5px}
-.list_mode .listview-product-img .compare-toggle-label .compare-toggle-link {
-    padding: 6px
+.list_mode .listview-product-img {
+    width: 20%;
+    padding: 40px 0 0 5px
 }
 
-.list_mode .listview-product-info {padding: 35px 0 0 10px}
+.list_mode .listview-product-info {
+    padding: 35px 0 0 10px
+}
 
-.list_mode .product-tile-name {height: 32px; padding-left: 0}
+.list_mode .product-tile-name {
+    height: 40px; 
+    padding-left: 0
+}
 
-.list_mode .listview-product-price {padding-top: 30px; padding-left: 50px}
-.list_mode .listview-product-price .product-tile-footer {padding-top: 90px}
+.list_mode .listview-product-price {
+    width: 28.99%;
+    padding-top: 30px
+}
+.list_mode .listview-product-price .product-tile-footer {
+    position: absolute;
+    right: 0;
+    bottom: -130px;
+}
 .list_mode .listview-product-price .revoo_wrapper {
     width: 170px;
     margin-left: 60px;
@@ -302,3 +313,9 @@
     border-top: 0 none
 }
 
+@media screen and (max-width: $screen-lg) {
+    .list_mode .listview-product-img {width: 26%; padding-top: 25px}
+    .list_mode .listview-product-info {width: 45%; padding-top: 25px}
+    .list_mode .listview-product-price {padding-top: 15px}
+    .list_mode .listview-product-price .product-tile-footer {bottom: -45px}
+}

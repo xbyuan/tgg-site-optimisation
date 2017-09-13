@@ -51,7 +51,7 @@
 	height: 60px;
 	padding-top: 8px;
 	text-align: center;
-	background-color: #fff;
+	background-color: #fff!important;
 	border-radius: 6px;
 	box-shadow: 0 3px 12px rgba(0,0,0,.2), 0 3px 12px rgba(0,0,0,.2);
 }
@@ -114,5 +114,6 @@
 .ggds .slick-category-Horizontal .tile-thumb {min-height: 140px; display: flex}
 /*Quick View*/
 .tggcontent .modal-header h3 {font-size: 21px; margin: 0}
+.modal #quickInfoContent .price_section {padding-right: 40px}
 /*Add to cart widget*/
 .ggds .slick-addtocart-Horizontal.slider {padding: 0}
