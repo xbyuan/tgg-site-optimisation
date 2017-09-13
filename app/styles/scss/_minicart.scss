@@ -84,17 +84,10 @@
             padding: 15px 0 5px 0;
             border-bottom: 3px solid $brand-success;
         }
-            // .minicart-icon {padding: 0 15px}
-            // .minicart-icon a {margin: 5px 10px 0 3px}
     }
-
-    // @media screen and (min-width: $screen-md) {
-    //     .minicart-icon a { margin-left: 7px}
-    // }
 
     @media screen and (max-width: $screen-xs) {
         .minicart-icon-mobile {padding-left: 0}
-        .minicart-container {padding: 0}
     }
     @media screen and (min-width: $screen-xs) and (max-width: $screen-lg) {
         .minicart-icon .icon {width: 24px}

@@ -1,5 +1,6 @@
 /*This file has been reviewed and cleaned by James on 20.03.2017 -- CSS are ready to go*/
 .ggds{
+.navbar-container {z-index: 50}
 .search-dropdown{
     position: absolute;
     left: 0;
@@ -37,10 +38,6 @@
         }
         .masthead-branding-logo img {max-height: 50px}
 
-    // @media screen and (min-width: $screen-sm) {
-    //    .masthead-header {padding-top: 0; padding-bottom: 6px}
-    // }
-
     .masthead-header .supplementary {
         padding-top: 23px;
         padding-right: 0;
@@ -70,7 +67,6 @@
             background: #fff;
         }
 
-
     .search-mobile .btn {
         position: absolute;
         right: 0;
@@ -88,16 +84,13 @@
         .search-mobile .btn:active,
         .search-mobile .btn:hover {color: $brand-info}
             .search-mobile .btn .fa {line-height: 26px}
-        // #searchDropdown {z-index: 1006}
 
 @media screen and (min-width: $screen-sm) {
 
 /* Adapt Search for Tablet and above */
 #search {
-    // position: relative;
     margin-top: 18px;
     line-height: 1;
-    // text-align: left;
 }
     #search .searchbox {
         padding-left: 35px;
