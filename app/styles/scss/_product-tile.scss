@@ -113,9 +113,11 @@
         margin-left: -50px;
         transition: all .2s ease-in-out;
     }
-    .product-tile-imagewrap:hover .product-tile-quickview {
-        visibility: visible;
-        opacity: 1;
+    @media screen and (min-width: $screen-md) {
+        .product-tile-imagewrap:hover .product-tile-quickview {
+            visibility: visible;
+            opacity: 1;
+        }
     }
     /* Product Tile: Price */
     /* -------------------------------------------------------------------- */

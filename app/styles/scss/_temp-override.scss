@@ -55,6 +55,8 @@
 	border-radius: 6px;
 	box-shadow: 0 3px 12px rgba(0,0,0,.2), 0 3px 12px rgba(0,0,0,.2);
 }
+#progress_bar #loading_popup div {background: none}
+#progress_bar #loading_popup .bodycontent {padding: 0}
 /*Compare alert*/
 .widget_site_popup .content_right_border {
 	background-color: #fff;
@@ -112,3 +114,5 @@
 .ggds .slick-category-Horizontal .tile-thumb {min-height: 140px; display: flex}
 /*Quick View*/
 .tggcontent .modal-header h3 {font-size: 21px; margin: 0}
+/*Add to cart widget*/
+.ggds .slick-addtocart-Horizontal.slider {padding: 0}
