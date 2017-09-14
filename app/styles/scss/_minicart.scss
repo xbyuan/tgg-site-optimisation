@@ -68,6 +68,11 @@
             font-size: 0.9em;
             transition: all ease-in-out 0.3s;
         }
+        @media screen and (max-width: $screen-md) {
+            .minicart-dropdown {
+                right: 31px;
+            }
+        }
             .minicart-dropdown .inner-content {
                 margin: 5px;
                 padding: 5px;

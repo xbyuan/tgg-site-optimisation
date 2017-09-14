@@ -111,9 +111,17 @@
 .disp-none,
 .store_message {display: none}
 /*Home Page*/
+.ggds .container.fullwidth {width: 100%}
 .ggds .slick-category-Horizontal .tile-thumb {min-height: 140px; display: flex}
 /*Quick View*/
 .tggcontent .modal-header h3 {font-size: 21px; margin: 0}
 .modal #quickInfoContent .price_section {padding-right: 40px; padding-top: 5px}
 /*Add to cart widget*/
 .ggds .slick-addtocart-Horizontal.slider {padding: 0}
+/*Compare toll*/
+.compare_text .ggds .labl-tile {
+	position: absolute;
+    top: 10px;
+    left: 10px;
+    right: auto;
+}

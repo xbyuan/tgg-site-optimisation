@@ -140,7 +140,7 @@
         .mobilemenu .menuitem:hover,
         .mobilemenu .menuitem:active
          {
-            color: $brand-primary;
+            color: $brand-primary!important;
             text-decoration: none;
             background-color: #fff;
         }
@@ -182,6 +182,11 @@
             padding-top: 0.5em;
             font-size: 1.05em;
             color: #fff;
+        }
+        .mobilemenu-footer a:active,
+        .mobilemenu-footer a:hover {
+            color: #fff!important;
+            text-decoration: none;
         }
         .mobilemenu-footer .menu-label {
             display: block;
@@ -261,6 +266,11 @@
             background-color: #000;
         }
     }
+}
+body.nav_open {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
 }
 body.nav_open #contentWrapper,
 body.nav_open .masthead-header {-webkit-filter: blur(4px)}

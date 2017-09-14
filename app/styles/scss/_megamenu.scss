@@ -13,7 +13,9 @@
     font-weight: 500;
 }
 .menu-main ul {padding: 0}
+.menu-main .megamenu-content ul:first-child {padding-left: 15px}
     .menu-main .menu-main-item {display: inline-block}
+
 /* Top tier  */
 .menu-main li > .menu-main-label {
     display: block;
