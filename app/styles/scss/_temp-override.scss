@@ -111,7 +111,7 @@
 .disp-none,
 .store_message {display: none}
 /*Home Page*/
-.ggds .container.fullwidth {width: 100%}
+.ggds .content-slot {overflow-x: hidden}
 .ggds .slick-category-Horizontal .tile-thumb {min-height: 140px; display: flex}
 /*Quick View*/
 .tggcontent .modal-header h3 {font-size: 21px; margin: 0}

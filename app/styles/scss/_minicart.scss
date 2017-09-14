@@ -8,11 +8,7 @@
     }
 
     .minicart-icon-mobile {padding-left: 10px}
-    .minicart-icon-mobile a {
-        display: inline-block;
-        width: 45px;
-        position: relative;
-    }
+    .minicart-icon-mobile a {display: block}
 
     .minicart-icon-mobile .items {
         position: absolute;
