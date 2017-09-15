@@ -8,7 +8,14 @@
     }
 
     .minicart-icon-mobile {padding-left: 10px}
-    .minicart-icon-mobile a {display: block}
+    .minicart-icon-mobile a {
+        display: block;
+        position: absolute;
+        width: 45px;
+        height: 49px;
+        left: 0;
+        top: 0;
+    }
 
     .minicart-icon-mobile .items {
         position: absolute;
