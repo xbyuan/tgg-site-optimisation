@@ -1,37 +1,20 @@
 /*This file has been reviewed and cleaned by James on 17.03.2017 -- CSS are ready to go*/
 .ggds{
+#masthead {position: relative}
 .nav_model .close {opacity: 1}
-#mobile-search {padding-top: 10px}
+#mobile-search {padding: 0}
 .mobilemenu-toggle {display: block}
 
 /* Mobile Minicart and Menu Toggle Icons  */
-@media screen and (max-width: $screen-xs-max) {
-    .nav-toggle {
-        position: relative;
-        min-height: 42px;
-    }
-        .nav-toggle .mobile-toggle-svg {
-            position: absolute;
-            left: 17px;
-            top: 7px;
-        }
-
-    .minicart-container {
-        position: relative;
-        min-height: 49px;
-        padding-left: 0;
-    }
-}
 .mobile-minicart-svg {
     width: 45px;
     height: 40px;
-    position: absolute;
-    left: 0;
-    top: 3px;
+    padding-top: 10px;
 }
 .mobile-toggle-svg {
-    max-width: 24px;
+    max-width: 30px;
     height: 36px;
+    padding-top: 14px;
 }
 .fill-primary {
     fill: $brand-primary;
@@ -266,7 +249,6 @@
         .minicart-container {padding-right: 0}
     }
     @media screen and (max-width: $screen-sm) and (orientation: landscape) {
-        .mobile-toggle-svg {max-width: 40px; top: 17px}
         .mobilemenu-toggle {margin-top: 8px}
         .masthead-branding-logo img {max-height: 45px}
         #mobile-search {margin-top: 10px}

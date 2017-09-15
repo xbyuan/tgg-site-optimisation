@@ -9,12 +9,9 @@
 
     .minicart-icon-mobile {padding-left: 10px}
     .minicart-icon-mobile a {
-        display: block;
-        position: absolute;
+        display: inline-block;
         width: 45px;
-        height: 49px;
-        left: 0;
-        top: 0;
+        position: relative;
     }
 
     .minicart-icon-mobile .items {

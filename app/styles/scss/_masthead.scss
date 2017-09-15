@@ -30,7 +30,9 @@
     text-decoration: underline;
 }
 /* Masthead branding and logo */
-.masthead-header {padding-bottom: 6px}
+.masthead-header {
+    padding-bottom: 5px;
+}
 .masthead-header .brand {padding: 10px 10px 0 10px}
         .masthead-branding-logo {
             min-height: 50px;
@@ -148,7 +150,7 @@
         .masthead-header .supplementary {padding-top: 15px; padding-right: 10px}
     }
     @media screen and (max-width: $screen-xs) {
-        #searchDropdown {max-width: 92%; left: 15px; top: 45px}
+        #searchDropdown {width: 100%; left: 0; top: 35px}
     }
     .supplementary .small-nav > li:last-child {border-right: 0 none}
 }
