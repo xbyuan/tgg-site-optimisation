@@ -300,8 +300,9 @@
 }
 
 .list_mode .listview-product-price {
+    position: initial;
     width: 28.99%;
-    padding-top: 30px
+    padding-top: 30px;
 }
 .list_mode .listview-product-price .product-tile-footer {
     position: absolute;
@@ -319,5 +320,5 @@
     .list_mode .listview-product-img {width: 26%; padding-top: 25px}
     .list_mode .listview-product-info {width: 45%; padding-top: 25px}
     .list_mode .listview-product-price {padding-top: 15px}
-    .list_mode .listview-product-price .product-tile-footer {bottom: -45px}
+    .list_mode .listview-product-price .product-tile-footer {bottom: 10px}
 }
