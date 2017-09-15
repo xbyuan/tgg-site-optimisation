@@ -277,6 +277,9 @@
             padding: 0;
             margin: 0;
         }
+        .megamenu-content ul li.view_all a {
+            color: $brand-primary;
+        }
     /* Remove border from all anchors inside megemenu when not on mobile */
     .megamenu-content a {
         display: inline-block;
