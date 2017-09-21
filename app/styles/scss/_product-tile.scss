@@ -1,7 +1,3 @@
-/* ---------------------------------------------------------------- */
-/* Produdct Tiles */
-/* ---------------------------------------------------------------- */
-
 .ggds {
     /*Aurora Override*/
     .compare_target {
@@ -45,22 +41,20 @@
         height: auto;
         display: inline-block;
     }
-    .product-tile-thumb .tile-image-2 {
-        display: none;
-    }
-    .product-tile-imagewrap:hover .tile-image-1 {
-        display: none;
-    }
-    .product-tile-imagewrap:hover .tile-image-2 {
-        display: inline-block;
-    }
+
+    .product-tile-thumb .tile-image-2 {display: none}
+
+    .product-tile-imagewrap:hover .tile-image-1 {display: none}
+
+    .product-tile-imagewrap:hover .tile-image-2 {display: inline-block}
+
     .compare-toggle {
         margin-top: 8px;
         text-align: center;
     }
-    .compare-toggle-inner {
-        display: inline-block;
-    }
+
+    .compare-toggle-inner {display: inline-block}
+
     .compare-toggle-label {
         padding-left: 8px;
         border-radius: 6px;
@@ -115,12 +109,14 @@
         margin-left: -50px;
         transition: all .2s ease-in-out;
     }
+
     @media screen and (min-width: $screen-md) {
         .product-tile-imagewrap:hover .product-tile-quickview {
             visibility: visible;
             opacity: 1;
         }
     }
+    /* -------------------------------------------------------------------- */
     /* Product Tile: Price */
     /* -------------------------------------------------------------------- */
     .product-tile-price {
@@ -141,7 +137,7 @@
         line-height: 0.95;
     }
 
-
+    /* -------------------------------------------------------------------- */
     /* Product Tile: Cashback styling */
     /* -------------------------------------------------------------------- */
     .pricepoint .beforecashback,
@@ -188,20 +184,20 @@
         color: $gray-dark-1;
     }
     .pricepoint.pricepoint strong {font-weight: 400}
+    /* -------------------------------------------------------------------- */
     /* Product Tile: Ticket price */
     /* -------------------------------------------------------------------- */
-    .has-ticket .product-tile-imagewrap {}
-    .has-ticket .product-tile-imagewrap::before {
-        content: ' ';
-        position: absolute;
-        top: 30px;
-        right: 15px;
-        height: 42px;
-        width: 66px;
-        background-image: url(../assets/images/callout-priceslash.png);
-        background-repeat: no-repeat;
-        background-position: top right;
-    }
+    // .has-ticket .product-tile-imagewrap::before {
+    //     content: ' ';
+    //     position: absolute;
+    //     top: 30px;
+    //     right: 15px;
+    //     height: 42px;
+    //     width: 66px;
+    //     background-image: url(../assets/images/callout-priceslash.png);
+    //     background-repeat: no-repeat;
+    //     background-position: top right;
+    // }
 
     .has-ticket .product-tile-price .price {
         font-size: 3.5rem;
@@ -227,8 +223,7 @@
         transform: rotate(-30deg);
         transform-origin: top right;
     }
-
-
+    /* -------------------------------------------------------------------- */
     /* Product Tile: Footer */
     /* -------------------------------------------------------------------- */
     .revoo_wrapper {
@@ -322,3 +317,4 @@
     .list_mode .listview-product-price {padding-top: 15px}
     .list_mode .listview-product-price .product-tile-footer {bottom: 10px}
 }
+/*End _product-tile.scss*/

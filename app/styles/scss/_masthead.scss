@@ -1,127 +1,80 @@
-/*This file has been reviewed and cleaned by James on 20.03.2017 -- CSS are ready to go*/
 .ggds{
-.navbar-container {z-index: 11}
-.search-dropdown{
-    position: absolute;
-    left: 0;
-    right: -25px;
-    top: 35px;
-    z-index: 1006;
-}
-.search-dropdown-inner {
-    background-color: #fff;
-    border: 1px solid $gray-light-1;
-}
-.search-dropdown-inner ul {padding-left: 0; margin: 0}
-.search-dropdown-inner ul li {list-style: none}
-.search-dropdown-inner ul li.heading {background-color: $gray-light-4; text-transform: uppercase}
-.search-dropdown-inner ul li.search-advanced {padding: 15px; background-color: #fff}
-.autoSuggestDivNestedList li {padding: 15px; border-bottom: 1px solid $gray-light-1}
-.autoSuggestDivNestedList li:hover,
-.search-dropdown-inner ul li.search-advanced:hover {background-color: #d9e9f7}
-.autoSuggestDivNestedList li a {color: $brand-primary; display: block}
-.autoSuggestDivNestedList li a:hover {color: $brand-danger}
+    .navbar-container {z-index: 11}
+    .search-dropdown{
+        position: absolute;
+        left: 0;
+        right: -25px;
+        top: 35px;
+        z-index: 1006;
+    }
+        .search-dropdown-inner {
+            background-color: #fff;
+            border: 1px solid $gray-light-1;
+        }
+            .search-dropdown-inner ul {padding-left: 0; margin: 0}
+            .search-dropdown-inner ul li {list-style: none}
+            .search-dropdown-inner ul li.heading {background-color: $gray-light-4; text-transform: uppercase}
+            .search-dropdown-inner ul li.search-advanced {padding: 15px; background-color: #fff}
+            .autoSuggestDivNestedList li {padding: 15px; border-bottom: 1px solid $gray-light-1}
+            .autoSuggestDivNestedList li:hover,
+            .search-dropdown-inner ul li.search-advanced:hover {background-color: #d9e9f7}
+            .autoSuggestDivNestedList li a {color: $brand-primary; display: block}
+            .autoSuggestDivNestedList li a:hover {color: $brand-danger}
 
-/* ---------------------------------------------------------------- */
-/* Header
-/* ---------------------------------------------------------------- */
-#masthead .small-nav > li > a:hover {
-    color: $brand-secondary;
-    text-decoration: underline;
-}
-/* Masthead branding and logo */
-.masthead-header {
-    padding-bottom: 5px;
-}
-.masthead-header .brand {padding: 10px 10px 0 10px}
+    /* ---------------------------------------------------------------- */
+    /* Header
+    /* ---------------------------------------------------------------- */
+    #masthead .small-nav > li > a:hover {
+        color: $brand-secondary;
+        text-decoration: underline;
+    }
+    /* Masthead branding and logo */
+    .masthead-header {padding-bottom: 5px}
+        .masthead-header .brand {padding: 10px 10px 0 10px}
         .masthead-branding-logo {
             min-height: 50px;
             padding: 10px 0 5px;
         }
         .masthead-branding-logo img {max-height: 50px}
-
-    .masthead-header .supplementary {
-        padding-top: 23px;
-        padding-right: 0;
-        text-align: right;
-    }
-/* Mobile search ----------------------------------------------------- */
-.search-mobile {
-    padding-bottom: 0.5em;
-    position: relative;
-    font-size: 1.5em;
-}
-
-    .search-mobile .searchbox {
-        background-color: #fff;
-        border: 1px solid #ccc;
-        color: $gray;
-        border-radius: 0 6px 6px 0;
-        transition: background 1s linear;
-        font-size: .9em;
-        font-weight: 300;
-        line-height: 1.5;
-    }
-        .search-mobile .searchbox:focus {
-            color: #000;
-            outline: none;
-            border-color: #c0c0c0;;
-            background: #fff;
+        .masthead-header .supplementary {
+            padding-top: 23px;
+            padding-right: 0;
+            text-align: right;
         }
 
-    .search-mobile .btn {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 45px;
-        padding: 0.2em 0.4em;
-        color: #fff;
-        font-size: 1.2em;
-        line-height: 1;
-        outline: none;
-        background-color: $brand-primary;
-        border: none;
-        border-radius: 0 6px 6px 0;
-    }
-        .search-mobile .btn:active,
-        .search-mobile .btn:hover {color: $brand-info}
-            .search-mobile .btn .fa {line-height: 26px}
-
-@media screen and (min-width: $screen-sm) {
-
-/* Adapt Search for Tablet and above */
-#search {
-    margin-top: 18px;
-    line-height: 1;
-}
-    #search .searchbox {
-        padding-left: 35px;
-        background: $gray-light-4;
-        color: $gray-dark-5;
-        border: 1px solid $gray-light;
-        font-size: 1.2em;
-        line-height: 1.5;
-        border-radius: 2px;
-        transition: background 1s linear;
-    }
+    @media screen and (min-width: $screen-sm) {
+        /* Adapt Search for Tablet and above */
+        #search {
+            margin-top: 18px;
+            line-height: 1;
+        }
+        #search .searchbox {
+            padding-left: 35px;
+            line-height: 1.5;
+            font-size: 1.2em;
+            color: $gray-dark-5;
+            background: $gray-light-4;
+            border: 1px solid $gray-light;
+            border-radius: 2px;
+            transition: background 1s linear;
+        }
         #search .searchbox:focus {
-            background: #fff;
             color: #000;
+            background: #fff;
             border-color: $gray;
             outline: none;
         }
-            #search .searchbox:focus + .btn {color: $gray-dark}
-
+        #search .searchbox:focus + .btn {color: $gray-dark}
         #search .btn {
             position: absolute;
             left: -7px;
             top: -1px;
-            border: none;
-            color: $gray-light-1;
             font-size: 1.5em;
+            color: $gray-light-1;
+            border: none;
             outline: none;
         }
-            #search .btn:hover {color: $brand-info}
+        #search .btn:hover {color: $brand-info}
 
         .small-nav > li {
             padding: 0 4px;
@@ -147,10 +100,19 @@
     }
     @media screen and (min-width: $screen-xs) and (max-width: $screen-lg) {
         #search {margin-top: 12px}
-        .masthead-header .supplementary {padding-top: 15px; padding-right: 10px}
+        .masthead-header .supplementary {
+            padding-top: 15px; 
+            padding-right: 10px;
+        }
     }
     @media screen and (max-width: $screen-xs) {
-        #searchDropdown {width: 100%; left: 0; top: 35px}
+        #searchDropdown {
+            width: 100%; 
+            left: 0; 
+            top: 35px;
+        }
     }
+
     .supplementary .small-nav > li:last-child {border-right: 0 none}
-}
+}// end .ggds namespace
+/*End _masthead.scss*/

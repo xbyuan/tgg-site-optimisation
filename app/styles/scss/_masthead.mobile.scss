@@ -1,50 +1,92 @@
-/*This file has been reviewed and cleaned by James on 17.03.2017 -- CSS are ready to go*/
 .ggds{
-#masthead {position: relative}
-.nav_model .close {opacity: 1}
-#mobile-search {padding: 0}
-.mobilemenu-toggle {display: block}
+    #masthead {position: relative}
+    .nav_model .close {opacity: 1}
 
-/* Mobile Minicart and Menu Toggle Icons  */
-.mobile-minicart-svg {
-    width: 45px;
-    height: 40px;
-    padding-top: 10px;
-}
-.mobile-toggle-svg {
-    display: inline-block;
-    max-width: 30px;
-    height: 36px;
-    padding-top: 14px;
-}
-.fill-primary {
-    fill: $brand-primary;
-}
-/* Mobile Menu ----------------------------------------------------- */
-.mobilemenu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    background: rgba(25, 102, 175, 0.6);
-    z-index: 2001;
-    transition: all 0.5s ease-in-out;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-/* Mobile Menu: Header ----------------------------------------------------- */
-.mobilemenu-header {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 20%;
-    height: 7.2vh;
-    transition: width .5s, background .5s;
-    z-index: 1;
-}
-    .productNavOpen .mobilemenu-header {width: 100%; background-color: rgba(0, 0, 0, 0.2)}
+    /* Mobile search ----------------------------------------------------- */
+    #mobile-search {padding: 0}
+    .search-mobile {
+        position: relative;
+        padding-bottom: 0.5em;
+        font-size: 1.5em;
+    }
+        .search-mobile .searchbox {
+            color: $gray;
+            background-color: #fff;
+            font-size: .9em;
+            font-weight: 300;
+            line-height: 1.5;
+            border: 1px solid #ccc;
+            border-radius: 0 6px 6px 0;
+            transition: background 1s linear;
+        }
+            .search-mobile .searchbox:focus {
+                color: #000;
+                background: #fff;
+                border-color: #c0c0c0;
+                outline: none;
+            }
+        .search-mobile .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 45px;
+            padding: 0.2em 0.4em;
+            color: #fff;
+            font-size: 1.2em;
+            line-height: 1;
+            outline: none;
+            background-color: $brand-primary;
+            border: 0 none;
+            border-radius: 0 6px 6px 0;
+        }
+            .search-mobile .btn:active,
+            .search-mobile .btn:hover {color: $brand-info}
+            .search-mobile .btn .fa {line-height: 26px}
+    .mobilemenu-toggle {display: block}
+
+    /* Mobile Minicart and Menu Toggle Icons  */
+    .mobile-minicart-svg {
+        width: 45px;
+        height: 40px;
+        padding-top: 10px;
+    }
+    .mobile-toggle-svg {
+        display: inline-block;
+        max-width: 30px;
+        height: 36px;
+        padding-top: 14px;
+    }
+    .fill-primary {
+        fill: $brand-primary;
+    }
+    /* Mobile Menu ----------------------------------------------------- */
+    .mobilemenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        background: rgba(25, 102, 175, 0.6);
+        z-index: 2001;
+        transition: all 0.5s ease-in-out;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    /* Mobile Menu: Header ----------------------------------------------------- */
+    .mobilemenu-header {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 20%;
+        height: 7.2vh;
+        transition: width .5s, background .5s;
+        z-index: 1;
+    }
+    .productNavOpen .mobilemenu-header {
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.2);
+    }
     .productNavOpen .mobilemenu-header .mobilemenu-close {background-color: transparent}
     .mobilemenu-header .mobilemenu-close {
         position: absolute;
@@ -55,30 +97,28 @@
         z-index: 30;
         background-color: rgba(0, 0, 0, 0.2);
     }
-
     .mobilemenu-header .mobilemenu-back {
         display: none;
         position: absolute;
         top: 0;
         left: 85%;
-        z-index: 31;
         height: 9vh;
         padding: .9em 1.5em;
         transition: opacity .5s, display .5s, left .5s;
         opacity: 0;
+        z-index: 31;
     }
     .productNavOpen .mobilemenu-header .mobilemenu-back {
         display: block;
-        opacity: 1; 
         left: 0;
+        opacity: 1; 
     }
-
         .mobilemenu-header .mobilemenu-icon-svg {
-            fill: #fff;
             max-height: 24px;
             max-width: 24px;
+            fill: #fff;
         }
-/* Mobile Menu: Body ----------------------------------------------------- */
+    /* Mobile Menu: Body ----------------------------------------------------- */
     .mobilemenu-body {
         position: fixed;
         left: 0;
@@ -117,7 +157,6 @@
     .mobilemenu-body.offpage {   
         opacity: 0;
     }
-
         .mobilemenu ul {
             padding: 0;
             margin: 0;
@@ -138,12 +177,11 @@
         transition: color 0.2s, background 0.5s;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
     }
-        .mobilemenu .menuitem-products { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+        .mobilemenu .menuitem-products {-webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
 
         .mobilemenu .menuitem:focus,
         .mobilemenu .menuitem:hover,
-        .mobilemenu .menuitem:active
-         {
+        .mobilemenu .menuitem:active {
             color: $brand-primary!important;
             text-decoration: none;
             background-color: #fff;
@@ -156,6 +194,7 @@
         text-align: left;
         font-size: 2.25em;
     }
+
     /* Mobile Menu: Footer ----------------------------------------------------- */
     .mobilemenu-footer {
         position: fixed;
@@ -205,7 +244,10 @@
             transition: all 0.2s linear;
         }
             .mobilemenu-header .mobilemenu-icon-svg,
-            .mobilemenu-footer .mobilemenu-icon-svg {max-width: 26px; max-height: 26px}
+            .mobilemenu-footer .mobilemenu-icon-svg {
+                max-width: 26px; 
+                max-height: 26px;
+            }
             .mobilemenu-header .mobilemenu-back,
             .mobilemenu-header .mobilemenu-close {
                 padding-top: 0.75em;
@@ -221,7 +263,7 @@
             max-height: 99vh;
         }
 
-        .mobilemenu-l1 {top: 15vh; max-height: 85vh}
+        .mobilemenu-l1 {top: 15vh; max-height: 85vh;}
         .mobilemenu .menuitem {
             padding-left: 30px;
             font-size: 13vh;
@@ -270,7 +312,9 @@
             background-color: #000;
         }
     }
-}
+}// end .ggds namespace
+
+/*Fixed position background*/
 body.nav_open {
     width: 100%;
     position: fixed;
@@ -278,3 +322,4 @@ body.nav_open {
 }
 body.nav_open #contentWrapper,
 body.nav_open .masthead-header {-webkit-filter: blur(4px)}
+/*End _masthead.mobile.scss*/
