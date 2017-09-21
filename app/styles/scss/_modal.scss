@@ -4,17 +4,56 @@
     max-height: 100%;
     margin: auto;
 }
+
 .ggds .modal-header h3 {margin: 0}
+
 #quickInfoContent #reevooDiv > div:nth-child(2) div {
     top: -8px;
     height: 12px !important;
     width: 93px!important;
     background-position: -9px -10px !important;
     margin-left: 107px;
-    background-image: url(//www.thegoodguys.com.au/cs/groups/public/documents/graphic/reevoo-icon-askanowner-new-png.png)!important;
+    background-image: url(/cs/groups/public/documents/graphic/reevoo-icon-askanowner-new-png.png)!important;
 }
 
 #quickInfoContent #reevooDiv > div:nth-child(2) div span {
     top: 1px!important;
     left: 25px !important;
 }
+/*Certona Widget for Quick View*/
+.ggds {
+    .certona-quickview-horizontal{
+        background: #fff;
+        box-shadow: 0 3px 12px rgba(0,0,0,.06), 0 3px 12px rgba(0,0,0,.06);
+    }
+    .certona-quickview-horizontal .merchandising-heading{
+        padding: 10px 15px;
+        border-bottom: 1px solid $gray-light-2;
+        margin-bottom: 10px;
+    }
+    .certona-quickview-horizontal .slider{padding: 0}
+    .certona-quickview-horizontal .tile-product{padding: 0 30px}
+    .certona-quickview-horizontal .tile-thumb{width: 110px}
+    .certona-quickview-horizontal .tile-title h5 {
+        line-height: 1.2;
+        padding: 0;
+        font-weight: 700;
+        font-size: .85rem;
+    }
+    .certona-quickview-horizontal .tile-pricewrap{padding-bottom: 10px}
+    .certona-quickview-horizontal .tile-pricewrap{
+        font-weight: 500;
+        font-size: 1.3rem;
+        color: rgba(0,0,0,0.87);
+    }
+    .certona-quickview-horizontal .tile-thumb {
+        display: block;
+        margin:auto;
+    }
+    .certona-quickview-horizontal .tile-thumb img {display: inline-block}
+    .certona-quickview-horizontal .tile-thumb{
+        height:112px;
+        line-height:110px;
+    }
+}
+/*End _modal.scss*/
