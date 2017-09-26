@@ -8,17 +8,33 @@
 .ggds .modal-header h3 {margin: 0}
 
 #quickInfoContent #reevooDiv > div:nth-child(2) div {
-    top: -8px;
+    top: -14px;
+    left: -72px;
     height: 12px !important;
     width: 93px!important;
     background-position: -9px -10px !important;
     margin-left: 107px;
     background-image: url(/cs/groups/public/documents/graphic/reevoo-icon-askanowner-new-png.png)!important;
 }
-
+#quickInfoContent #reevooDiv #reevoomark_badge_0 span {
+    left: 60px!important; 
+    top: 5px!important;
+}
 #quickInfoContent #reevooDiv > div:nth-child(2) div span {
     top: 1px!important;
     left: 25px !important;
+}
+#quickInfoContent #reevooDiv .reevoomark_badge {
+    background-position: -18px 0px!important;
+    width: 50px!important;
+    overflow: visible!important;
+}
+#quickInfoContent ul {padding: 0}
+#quickInfoContent ul li {list-style: none}
+#quickInfoContent .featurelist h2 {
+    margin: 10px 0 0;
+    color: #5d5d5d;
+    font-size: 1.6em;
 }
 /*Certona Widget for Quick View*/
 .ggds {
@@ -55,5 +71,6 @@
         height:112px;
         line-height:110px;
     }
+    .certona-quickview-horizontal sup.dec {top: 1.2em}
 }
 /*End _modal.scss*/

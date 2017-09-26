@@ -1,3 +1,4 @@
+.ggds .content-slot.bg-graylighter div {min-height: initial}
 #masthead {background-color: #fff}
 /*-------------------------------------------------------------*/
 /* style.css */
@@ -20,6 +21,36 @@
     min-height: 16.43px;
     border-bottom: 1px solid #e5e5e5;
     font-weight: 400;
+}
+.tggcontent .info-callout-warning {
+    border-left-color: #ee9920
+}
+.tggcontent .info-callout-lg {
+    border-left-width: 5px;
+    border-top-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #ddd;
+    border-right-color: #ddd;
+    border-bottom-color: #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info-callout {
+    margin: 15px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, .6)
 }
 /*-------------------------------------------------------------*/
 /* bass.css */
@@ -123,4 +154,8 @@
     top: 10px;
     left: 10px;
     right: auto;
+}
+/*Fix for IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.masthead-header .logo-mast img {max-height: 60px}
 }

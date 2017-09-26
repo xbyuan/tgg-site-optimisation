@@ -10,6 +10,11 @@
         padding: initial;
         text-align: initial;
     }
+    .compare_target > input {
+        position: initial;
+        vertical-align: initial;
+        top: initial;
+    }
     .compare_target > a {margin: initial}
     /* Only set height on grid layout as list can be variable */
     .product-tile-inner {
@@ -44,9 +49,16 @@
 
     .product-tile-thumb .tile-image-2 {display: none}
 
-    .product-tile-imagewrap:hover .tile-image-1 {display: none}
+    .product-tile-imagewrap:hover .tile-image-1,
+    .listview-product-img .image:hover .tile-image-1 {display: none}
 
-    .product-tile-imagewrap:hover .tile-image-2 {display: inline-block}
+    .product-tile-imagewrap:hover .tile-image-2,
+    .listview-product-img .image:hover .tile-image-2 {display: inline-block}
+
+    .listview-product-img .image:hover .product-tile-quickview {
+        opacity: 1;
+        visibility: visible;
+    }
 
     .compare-toggle {
         margin-top: 8px;
@@ -62,7 +74,7 @@
     .compare-toggle-label input {
         display: block;
         float: left;
-        margin-top: 10px;
+        margin-top: .7em;
     }
     .compare-toggle-label label {
         display: inline-block;
@@ -269,7 +281,7 @@
         padding: 0 5px;
     }
     @media screen and (max-width: $screen-sm) {
-        .slider {padding: 0 30px}
+        .catalogEntryRecommendationWidget .slider {padding: 0 30px}
     }
 
     // Slick Slider

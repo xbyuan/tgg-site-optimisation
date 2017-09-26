@@ -61,7 +61,7 @@
             top: 100%;
             right: 0;
             width: 240px;
-            max-height: 350px;
+            //max-height: 350px;
             background: $gray-lighter;
             @include card(1);
             border-bottom: 8px solid $brand-success;
@@ -77,7 +77,7 @@
             .minicart-dropdown .inner-content {
                 margin: 5px;
                 padding: 5px;
-                max-height: 340px;
+                //max-height: 340px;
                 background: #fff;
                 transition: all ease-in-out 0.3s;
             }
