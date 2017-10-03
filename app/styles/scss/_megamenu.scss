@@ -279,6 +279,7 @@
         .megamenu-content ul li.view_all a {
             color: $brand-primary;
         }
+        
     /* Remove border from all anchors inside megemenu when not on mobile */
     .megamenu-content a {
         display: inline-block;
@@ -288,7 +289,8 @@
     }
         .megamenu-content a.link { color: $brand-primary; }
         .megamenu-content a:hover,
-        .megamenu-content .coltitle a:hover {
+        .megamenu-content .coltitle a:hover,
+        .megamenu-content ul li.view_all a:hover {
             background: transparent;
             color: $brand-danger;
         }
@@ -311,5 +313,11 @@
             margin: 0;
             color: #000;
         }
-}// end .ggds namespace
+    @media screen and (max-width: $screen-tablet) and (orientation: portrait) {
+        .menu-main li.menu-main-item:nth-child(5),
+        .menu-main li.menu-main-item:nth-child(6) {display: none}
+    }
+}
+
+// end .ggds namespace
 /*End _megamenu.scss*/

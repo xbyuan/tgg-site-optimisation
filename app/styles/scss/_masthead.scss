@@ -20,7 +20,7 @@
             .search-dropdown-inner ul li.search-advanced:hover {background-color: #d9e9f7}
             .autoSuggestDivNestedList li a {color: $brand-primary; display: block}
             .autoSuggestDivNestedList li a:hover {color: $brand-danger}
-
+            .autoSuggestDivNestedList li a .highlight {font-weight: 700}
     /* ---------------------------------------------------------------- */
     /* Header
     /* ---------------------------------------------------------------- */
