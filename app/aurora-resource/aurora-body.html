@@ -569,7 +569,7 @@
                                 <input type="hidden" id="currentOrderLanguage" value="-1" />
                                 <input type="hidden" id="currentOrderId" value="" />
                             </div>
-                            <script type="text/javascript">
+                            <!-- <script type="text/javascript">
                             var tggCurrencyId = "AUD";
                             var tggLangId = "-1";
                             dojo.addOnLoad(function() {
@@ -580,7 +580,7 @@
                                     loadMiniCart("AUD", "-1");
                                 }
                             });
-                            </script>
+                            </script> -->
                         </div>
                     </section>
                 </div>
@@ -590,8 +590,8 @@
                         <span data-canvas="body" data-target=".navbar-offcanvas" data-toggle="offcanvas" class="navbar-toggle" type="button"><i class="fa fa-times"></i></span>
                     </div> -->
                     <meta name="CommerceSearch" content="storeId_900">
-                    <script>require(["dojo/domReady!"],function(){SearchJS.init();SearchJS.setCachedSuggestionsURL("SearchComponentCachedSuggestionsView?langId=-1&storeId=900&catalogId=30000");SearchJS.setAutoSuggestURL("SearchComponentAutoSuggestView?coreName=MC_20000_CatalogEntry_en_US&serverURL=http%3a%2f%2flocalhost%3a3737%2fsolr%2fMC_20000_CatalogEntry_en_US&langId=-1&storeId=900&catalogId=30000");document.forms["mobileSearchBox"].action=getAbsoluteURL()+"SearchDisplay";});var staticContent=[];var staticContentHeaders=[];
-                    </script>
+                    <!-- <script>require(["dojo/domReady!"],function(){SearchJS.init();SearchJS.setCachedSuggestionsURL("SearchComponentCachedSuggestionsView?langId=-1&storeId=900&catalogId=30000");SearchJS.setAutoSuggestURL("SearchComponentAutoSuggestView?coreName=MC_20000_CatalogEntry_en_US&serverURL=http%3a%2f%2flocalhost%3a3737%2fsolr%2fMC_20000_CatalogEntry_en_US&langId=-1&storeId=900&catalogId=30000");document.forms["mobileSearchBox"].action=getAbsoluteURL()+"SearchDisplay";});var staticContent=[];var staticContentHeaders=[];
+                    </script> -->
                     <form id="mobileSearchBox" role="form" name="CatalogSearchForm" method="get" action="https://www.thegoodguys.com.au/SearchDisplay">
                     <input id="categoryId" name="categoryId" type="hidden">
                     <input name="storeId" value="900" type="hidden">
@@ -5188,7 +5188,7 @@
                 <!-- End Refactor Change Point -->
             </section>
         </header>
-        <script>
+        <!-- <script>
         dojo.addOnLoad(function() {
             if (wc.render.getRefreshControllerById("departmentMegaMenu_Controller")) {
                 wc.render.getRefreshControllerById("departmentMegaMenu_Controller").url = getAbsoluteURL() + "DepartmentDropdownViewRWD?storeId=900&catalogId=30000&langId=-1";
@@ -5197,8 +5197,8 @@
                 wc.render.getRefreshControllerById("departmentDealCatalogueMenu_Controller").url = getAbsoluteURL() + "CatalogueDealDropdownViewRWD?storeId=900&catalogId=30000&langId=-1";
             }
         });
-        </script>
-        <script>
+        </script> -->
+        <!-- <script>
         var flag = true;
         require(["dojo/dom", "dojo/query", "dojo/dom-class", "dojo/mouse", "dojo/on", "dojo/domReady!"], function(dom, query, domClass, mouse, on) {
             var winResolutionWidth = 0;
@@ -5233,7 +5233,7 @@
                 });
             }
         });
-        </script>
+        </script> -->
         <!-- BEGIN: Google Trusted Stores -->
         <script type="text/javascript">
         var gts = gts || [];
@@ -5287,7 +5287,9 @@
                         <div id="contentRecommendationWidget_1_-1000_3074457345618307731" class="contentRecommendationWidget">
                             <!-- BEGIN Content_UI.jspf -->
                             <div class="left_espot centered">
-                                <div id="slashingPrice"></div>
+                                <div class="container">
+                                    <div id="slashingPrice"></div>
+                                </div>
                             </div>
                             <!-- END Content_UI.jspf -->
                         </div>
@@ -5312,14 +5314,14 @@
     </div>
     <div id="footerWrapper">
         <!-- BEGIN Footer.jsp -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         $(function() {
             if (deviceDetection.isTablet() || deviceDetection.isSmartPhone()) {
                 $(".quickviewBtn").css('display', 'none');
                 $(".tileImage2").css('display', 'none');
             }
         });
-        </script>
+        </script> -->
         <!-- <link rel="stylesheet" href="/wcsstore/AUOnlineSAS/css/A.mediagallery.css+slick-carousel.css,Mcc.MRE0boNka2.css.pagespeed.cf.jFyXGqsras.css" type="text/css" /> -->
         <div class="tggcontent modal fade modal-fullscreen force-fullscreen" id="quickInfoPopup" role="dialog" aria-labelledby="sorvZoomModal" aria-hidden="true">
             <div class=" modal-dialog modal-lg">
@@ -5684,7 +5686,7 @@
         }(this);
         //]]>
         </script>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         dojo.addOnLoad(function() {
             requestSubmitted = false;
             dojo.query('div[dojoType]').forEach(function(node, index, arr) {
@@ -5692,16 +5694,16 @@
             });
             parseAllWidgets();
         });
-        </script>
+        </script> -->
         <!-- TGGCommonFanplayrCode.jspf BEGINS -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         dojo.addOnLoad(function() {
             CommonControllersDeclarationJS.setCommonParameters('-1', '900', '30000');
             CommonControllersDeclarationJS.fanPlayrPageType = 'cat';
             shoppingActionsJS.fanCategoryId = '';
             shoppingActionsJS.fanPlayrCatName = '';
         });
-        </script>
+        </script> -->
         <div dojoType="wc.widget.RefreshArea" widgetId="TGGFanPlayrData" id="TGGFanPlayrData" controllerId="TGGFanPlayrDataController" ariaMessage="FanPlayr data updated" ariaLiveId="ariaMessage" role="region" aria-labelledby="TGGFanPlayrData_ACCE_Label">
             <!-- BEGIN AjaxTGGFanPlayrDataInclude.jsp  -->
             <!-- TGGFanPlayrProductsDataInclude.jspf Starts -->
