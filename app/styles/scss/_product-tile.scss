@@ -5,22 +5,22 @@
         font-size: inherit;
         color: inherit;
         line-height: 1.5;
-        min-width: initial;
+        min-width: 0;
         font-weight: 400;
         padding: initial;
         text-align: initial;
     }
     .compare_target > input {
-        position: initial;
+        position: static;
         vertical-align: initial;
-        top: initial;
+        top: auto;
     }
     .compare_target > a {margin: initial}
     /* Only set height on grid layout as list can be variable */
     .product-tile-inner {
         position: relative;
         padding-top: 10px;
-        margin: 3px 0;
+        margin: 0;
         min-height: 410px;
         background: #fff;
         border-radius: 2px;
@@ -34,7 +34,7 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        right: initial;
+        right: auto;
     }
     .product-tile-imagewrap {min-height: 215px}
     .product-tile-thumb {
@@ -47,8 +47,7 @@
         display: inline-block;
     }
 
-    .product-tile-thumb .tile-image-2 {display: none}
-
+    .product-tile-thumb .tile-image-2,
     .product-tile-imagewrap:hover .tile-image-1,
     .listview-product-img .image:hover .tile-image-1 {display: none}
 
@@ -196,20 +195,6 @@
         color: $gray-dark-1;
     }
     .pricepoint.pricepoint strong {font-weight: 400}
-    /* -------------------------------------------------------------------- */
-    /* Product Tile: Ticket price */
-    /* -------------------------------------------------------------------- */
-    // .has-ticket .product-tile-imagewrap::before {
-    //     content: ' ';
-    //     position: absolute;
-    //     top: 30px;
-    //     right: 15px;
-    //     height: 42px;
-    //     width: 66px;
-    //     background-image: url(../assets/images/callout-priceslash.png);
-    //     background-repeat: no-repeat;
-    //     background-position: top right;
-    // }
 
     .has-ticket .product-tile-price .price {
         font-size: 3.5rem;
@@ -232,7 +217,9 @@
         right: -1px;
         width: 100%;
         border-top: 2px solid $brand-danger;
+        -webkit-transform: rotate(-30deg);
         transform: rotate(-30deg);
+        -webkit-transform-origin: top right;
         transform-origin: top right;
     }
     /* -------------------------------------------------------------------- */
@@ -278,7 +265,7 @@
         margin-top: 15px;
     }
     .slick-slide.product-tile {
-        padding: 0 5px;
+        padding: 10px 5px;
     }
     @media screen and (max-width: $screen-sm) {
         .catalogEntryRecommendationWidget .slider {padding: 0 30px}
@@ -297,9 +284,7 @@
     padding: 40px 0 0 5px
 }
 
-.list_mode .listview-product-info {
-    padding: 35px 0 0 10px
-}
+.list_mode .listview-product-info {padding: 35px 0 0 10px}
 
 .list_mode .product-tile-name {
     height: 40px; 

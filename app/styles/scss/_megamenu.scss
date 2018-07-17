@@ -241,7 +241,7 @@
     }
     .menu-main-dropdown:hover .megamenu-container {
         visibility: visible;
-        opacity: 100;
+        opacity: 1;
         transform: scaleY(1);
     }
     /* ---------------------------------------------------------------- */
@@ -263,7 +263,7 @@
                     10px 10px 20px -1px rgba(0,0,0,0.15);
     }
     .menu-main-dropdown:hover .megamenu-content {
-        opacity: 100;
+        opacity: 1;
         transition: all 0.15s linear;
     }
     .megamenu-content ul {

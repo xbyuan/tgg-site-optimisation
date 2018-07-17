@@ -206,7 +206,9 @@
         background-color: rgba(255,255,255,0.2);
         border-bottom: 10px solid $brand-danger;
         text-align: center;
+        -webkit-transform-origin: bottom center;
         transform-origin: bottom center;
+        -webkit-transition: all .5s ease-in;
         transition: all 0.5s ease-in;
     }
         .productNavOpen .mobilemenu-footer {
@@ -241,6 +243,7 @@
         .mobilemenu-header {
             width: 15vw;
             height: 15vh;
+            -webkit-transition: all .2s linear;
             transition: all 0.2s linear;
         }
             .mobilemenu-header .mobilemenu-icon-svg,
