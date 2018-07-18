@@ -25,6 +25,7 @@
         background: #fff;
         border-radius: 2px;
         @include card(2);
+        box-shadow: 0 3px 12px rgba(0,0,0,.23), 0 3px 12px rgba(0,0,0,.16);
     }
     .product-tile-inner a:hover {
         text-decoration: none;
